@@ -1,0 +1,128 @@
+{
+ "status": "auto_selected",
+ "dataset": "turl",
+ "setting": "single_label",
+ "seed": 0,
+ "examples": [
+  {
+   "table_id": "6371751-5",
+   "columns": [
+    [
+     "2010 2011 2012"
+    ],
+    [
+     "Marco Holzer Timo Scheider Oliver Gavin Jan Magnussen Oliver Gavin Tommy Milner"
+    ],
+    [
+     "Porsche 997 GT3 -RSR Chevrolet Corvette C6.R Chevrolet Corvette C6.R"
+    ]
+   ],
+   "types": [
+    "time.event",
+    "people.person",
+    "automotive.model"
+   ],
+   "reasoning": "Reasoning: The first column contains years like \"2010\", \"2011\", and \"2012\", which are chronological events, so it represents \"time.event\". The second column lists names such as \"Marco Holzer\" and \"Timo Scheider\", which are human names, indicating that it represents \"people.person\". The third column contains car models like \"Porsche 997 GT3 -RSR\" and \"Chevrolet Corvette C6.R\", which are automotive models, so it represents \"automotive.model\". The context across the columns confirms these types, as the years correspond to racing seasons, the drivers' names compete in those seasons, and their vehicles are the models they race. Therefore, the column types are [\"time.event\", \"people.person\", \"automotive.model\"].",
+   "quoted_share": 0.7,
+   "n_quoted": 10,
+   "judge": {
+    "cites_cells": 5,
+    "uses_other_columns": 4,
+    "consistent": 5
+   },
+   "score": 14.7
+  },
+  {
+   "table_id": "29560012-3",
+   "columns": [
+    [
+     "2011 2012 2013"
+    ],
+    [
+     "Northern Territory Brisbane Lions Brisbane Lions"
+    ],
+    [
+     "Ainslie Queanbeyan Sydney Swans"
+    ]
+   ],
+   "types": [
+    "time.event",
+    "sports.sports_team",
+    "sports.sports_team"
+   ],
+   "reasoning": "Reasoning: The first column contains numerical values like \"2011\", \"2012\", and \"2013\", which represent years, indicating that it describes a time event. The second and third columns contain names of sports teams such as \"Northern Territory\", \"Brisbane Lions\", \"Ainslie\", and \"Queanbeyan\", which are specific to a sport, confirming they represent sports teams. The context shows that the teams mentioned in the second and third columns are associated with events in the first column, further supporting that the first column is a time event and the others are sports teams. Therefore, the column types are [\"time.event\", \"sports.sports_team\", \"sports.sports_team\"].",
+   "quoted_share": 1.0,
+   "n_quoted": 7,
+   "judge": {
+    "cites_cells": 4,
+    "uses_other_columns": 3,
+    "consistent": 5
+   },
+   "score": 13.0
+  },
+  {
+   "table_id": "7015936-1",
+   "columns": [
+    [
+     "2009 Details 2011 Details 2013 Details"
+    ],
+    [
+     "South Korea South Korea Soviet Union China Italy China"
+    ],
+    [
+     "China South Korea Italy South Korea China Serbia and Montenegro China"
+    ],
+    [
+     "China China South Korea China South Korea China China China"
+    ],
+    [
+     "China China Italy Italy United States United States Italy"
+    ]
+   ],
+   "types": [
+    "time.event",
+    "sports.sports_team",
+    "sports.sports_team",
+    "sports.sports_team",
+    "sports.sports_team"
+   ],
+   "reasoning": "Reasoning: The first column contains values like \"2009 Details\" and \"2011 Details,\" which represent specific years or time periods followed by additional information, indicating that it corresponds to a time-based event. The second column lists names such as \"South Korea\" and \"China,\" which are countries or teams often associated with sports events, and it is repeated across multiple rows with the third column, suggesting it represents a sports team. The third column also contains sports teams like \"Soviet Union\" and \"Serbia and Montenegro,\" reinforcing the idea that these columns together describe teams involved in sports events. The fourth and fifth columns consistently list \"China,\" \"South Korea,\" and other countries, aligning with the sports team theme and providing context for the relationships between the teams across different events. Therefore, the column types are [\"time.event\", \"sports.sports_team\", \"sports.sports_team\", \"sports.sports_team\", \"sports.sports_team\"].",
+   "quoted_share": 1.0,
+   "n_quoted": 8,
+   "judge": {
+    "cites_cells": 4,
+    "uses_other_columns": 3,
+    "consistent": 5
+   },
+   "score": 13.0
+  },
+  {
+   "table_id": "6170183-1",
+   "columns": [
+    [
+     "Keimola Motor Stadium Mantorp Park Scandinavian Raceway"
+    ],
+    [
+     "Jochen Rindt Leo Kinnunen Leo Kinnunen"
+    ],
+    [
+     "Porsche 908 Porsche 908 Porsche 908"
+    ]
+   ],
+   "types": [
+    "location.location",
+    "people.person",
+    "automotive.model"
+   ],
+   "reasoning": "Reasoning: The first column contains place names like \"Keimola,\" \"Motor,\" and \"Scandinavian Raceway,\" which are all locations related to racing or motor sports, and the context of the second and third columns (people and cars) further confirms these are race tracks. The second column lists names such as \"Jochen Rindt\" and \"Leo Kinnunen,\" which are individuals, likely racers or drivers, and these names are associated with the cars listed in the third column. The third column consistently shows \"Porsche 908,\" which is a specific model of a racing car, linking it to the drivers in the second column and the locations in the first column where these races would have taken place. Therefore, the column types are [\"location.location\", \"people.person\", \"automotive.model\"].",
+   "quoted_share": 1.0,
+   "n_quoted": 6,
+   "judge": {
+    "cites_cells": 4,
+    "uses_other_columns": 3,
+    "consistent": 5
+   },
+   "score": 13.0
+  }
+ ]
+}

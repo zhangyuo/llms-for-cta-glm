@@ -1,0 +1,198 @@
+{
+ "status": "auto_selected",
+ "dataset": "biodiv_wiki",
+ "setting": "single_label",
+ "seed": 0,
+ "examples": [
+  {
+   "table_id": "c59f306bb061463f8b5ce7174d4e450d",
+   "columns": [
+    [
+     "Aqua regia for Agricultural Land_Ap Samples",
+     "Ag_Silver_Ap_AquaRegia",
+     "Al_Alluminium_Ap_AquaRegia",
+     "As_Arsenic_Ap_AquaRegia",
+     "Au_Gold_Ap_AquaRegia",
+     "B_Boron_Ap_AquaRegia"
+    ],
+    [
+     "True",
+     "True",
+     "False",
+     "False",
+     "False",
+     "False"
+    ],
+    [
+     "False",
+     "False",
+     "False",
+     "False",
+     "False",
+     "False"
+    ],
+    [
+     "False",
+     "False",
+     "False",
+     "False",
+     "False",
+     "False"
+    ],
+    [
+     "Undetermined",
+     "Undetermined",
+     "Undetermined",
+     "Undetermined",
+     "Undetermined",
+     "Undetermined"
+    ]
+   ],
+   "types": [
+    "chemical element (Q11344)",
+    "visibility (Q30301666)",
+    "scale (Q10858537)",
+    "scale (Q10858537)",
+    "unit of concentration (Q60026969)"
+   ],
+   "reasoning": "Reasoning: The first column contains chemical element names like \"Aqua regia\" followed by \"for Agricultural Land_Ap,\" \"Ag_Silver_Ap_AquaRegia,\" and others, which are descriptions of chemical elements. The second column contains boolean values \"True\" and \"False\" that correspond to whether these elements are visible, with \"True\" for \"Aqua regia for Agricultural Land_Ap\" and \"False\" for the others, suggesting it indicates visibility. The third and fourth columns also contain \"False\" values that align with the visibility context, reinforcing that they are not relevant to the primary meaning. The fifth column lists \"Undetermined,\" which seems to be a placeholder for concentration units, as the chemical elements themselves are not concentrations but substances that might be measured in such units. Therefore, the column types are [\"chemical element (Q11344)\", \"visibility (Q30301666)\", \"scale (Q10858537)\", \"scale (Q10858537)\", \"unit of concentration (Q60026969)\"].",
+   "quoted_share": 1.0,
+   "n_quoted": 10,
+   "judge": {
+    "cites_cells": 4,
+    "uses_other_columns": 3,
+    "consistent": 5
+   },
+   "score": 13.0
+  },
+  {
+   "table_id": "d4c54ecd718449e19a14216c55803455",
+   "columns": [
+    [
+     "grassland",
+     "grassland",
+     "grassland",
+     "grassland",
+     "grassland",
+     "grassland"
+    ],
+    [
+     "16939.52076",
+     "9684.505029",
+     "4342.72084",
+     "4159.450124",
+     "3964.873672",
+     "1796.748124"
+    ],
+    [
+     "47",
+     "30",
+     "27",
+     "29",
+     "23",
+     "28"
+    ]
+   ],
+   "types": [
+    "vegetational formation (Q2083910)",
+    "biomass (Q2945560)",
+    "species (Q7432)"
+   ],
+   "reasoning": "Reasoning: The first column contains values like \"grassland,\" which is a type of vegetational formation (Q2083910), as confirmed by the context of the second and third columns that provide quantitative and species-specific data related to grassland areas. The second column lists numerical values such as \"16939.52076,\" which represent biomass (Q2945560) measured in square meters or another unit of area, likely corresponding to the extent of grassland in each row. The third column includes integers like \"47,\" \"30,\" and \"28,\" which denote species (Q7432) present in each grassland area, as these numbers likely count or identify the species diversity within the regions described. Therefore, the column types are [\"vegetational formation (Q2083910)\", \"biomass (Q2945560)\", \"species (Q7432)\"].",
+   "quoted_share": 1.0,
+   "n_quoted": 5,
+   "judge": {
+    "cites_cells": 4,
+    "uses_other_columns": 3,
+    "consistent": 5
+   },
+   "score": 13.0
+  },
+  {
+   "table_id": "34169c088ee848e4866f42e87b4ccbc2",
+   "columns": [
+    [
+     "D.glaucifolia",
+     "D.glaucifolia",
+     "D.glaucifolia",
+     "D.glaucifolia",
+     "C.glauca",
+     "Unknown Species"
+    ],
+    [
+     "1",
+     "1",
+     "1",
+     "1",
+     "4",
+     "4"
+    ]
+   ],
+   "types": [
+    "species (Q7432)",
+    "mass density (Q29539)"
+   ],
+   "reasoning": "Reasoning: The first column contains plant names like \"D.glaucifolia\" and \"C.glauca,\" with \"Unknown Species\" also fitting as a plant name. This indicates that the column represents plant species, specifically with a reference like \"Q7432\" implied by the context of biological classification. The second column contains numerical values \"1,\" \"1,\" \"1,\" \"1,\" \"4,\" and \"4,\" which are likely measurements of mass density, as the context suggests a comparison between different species where density is a relevant metric. The values in the second column are consistent across multiple rows for the same species in the first column, further supporting that this column measures a physical property. Therefore, the column types are [\"species (Q7432)\", \"mass density (Q29539)\"].",
+   "quoted_share": 0.9,
+   "n_quoted": 10,
+   "judge": {
+    "cites_cells": 4,
+    "uses_other_columns": 3,
+    "consistent": 5
+   },
+   "score": 12.9
+  },
+  {
+   "table_id": "b02af14b8cf34c43bac84325d6f1e912",
+   "columns": [
+    [
+     "Aqua regia for Agricultural Land_Ap Samples",
+     "Ag_Silver_Ap_AquaRegia",
+     "Al_Alluminium_Ap_AquaRegia",
+     "As_Arsenic_Ap_AquaRegia",
+     "Au_Gold_Ap_AquaRegia",
+     "B_Boron_Ap_AquaRegia"
+    ],
+    [
+     "True",
+     "True",
+     "False",
+     "False",
+     "False",
+     "False"
+    ],
+    [
+     "False",
+     "False",
+     "False",
+     "False",
+     "False",
+     "False"
+    ],
+    [
+     "False",
+     "False",
+     "False",
+     "False",
+     "False",
+     "False"
+    ]
+   ],
+   "types": [
+    "chemical element (Q11344)",
+    "visibility (Q30301666)",
+    "scale (Q10858537)",
+    "scale (Q10858537)"
+   ],
+   "reasoning": "Reasoning: The first column contains chemical element names like \"Aqua regia,\" \"Ag_Silver,\" \"As_Arsenic,\" \"Au_Gold,\" and \"B_Boron,\" which are all elements (Q11344). The second column has values \"True\" and \"False,\" indicating whether these elements are visible, and this aligns with the semantic type \"visibility (Q30301666).\" The third and fourth columns also contain \"True\" and \"False\" values, and since these columns consistently match the visibility status in the second column for each chemical element, they represent a binary scale (Q10858537). The context of the entire table suggests these columns are used to measure or indicate properties related to the elements listed. Therefore, the column types are [\"chemical element (Q11344)\", \"visibility (Q30301666)\", \"scale (Q10858537)\", \"scale (Q10858537)\"].",
+   "quoted_share": 0.9,
+   "n_quoted": 10,
+   "judge": {
+    "cites_cells": 4,
+    "uses_other_columns": 3,
+    "consistent": 5
+   },
+   "score": 12.9
+  }
+ ]
+}

@@ -1,0 +1,542 @@
+[
+ {
+  "table_id": "GitTables_11170",
+  "columns": [
+   [
+    "16951",
+    "16952",
+    "16953",
+    "16954",
+    "16955",
+    "16956"
+   ],
+   [
+    "11972109451",
+    "11972109451",
+    "11972109451",
+    "11972109451",
+    "11972109451",
+    "11972109451"
+   ],
+   [
+    "对安装师傅态度非常满意，装热水器外观完美？",
+    "美的品牌系列产品都值得拥有、信赖。",
+    "应该不错，先用一段时间再说！",
+    "很好用，家人很喜欢，家里老人自己装好啊",
+    "自己安装",
+    "给美的安装师傅好评。除了整安装配送，其他的不做评价，整个过程商家解决问题的能力真是不咋地。"
+   ]
+  ],
+  "types": [
+   "identifier",
+   "productID",
+   "comment"
+  ],
+  "reasoning": "Reasoning: The first column contains unique numerical values like \"16951\", \"16952\", and \"16956\", which appear to be sequential identifiers for different entries. The second column consistently has the same value \"11972109451\" across all rows, suggesting it is a constant product ID associated with each entry. The third column contains text, such as \"对安装师傅态度非常满意，装热水器外观完美？\" and \"给美的安装师傅好评\"， which are subjective comments or reviews related to the entries. The context indicates that the first column identifies individual entries, the second column links these entries to a specific product, and the third column provides customer feedback or comments. Therefore, the column types are [\"identifier\", \"productID\", \"comment\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 6,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ },
+ {
+  "table_id": "GitTables_88686",
+  "columns": [
+   [
+    "Italy",
+    "Portugal",
+    "Ukraine",
+    "Spain",
+    "France",
+    "Russia"
+   ],
+   [
+    "24",
+    "17",
+    "12",
+    "10",
+    "9",
+    "9"
+   ],
+   [
+    "1.0",
+    "0.708333333333",
+    "0.5",
+    "0.416666666667",
+    "0.375",
+    "0.375"
+   ]
+  ],
+  "types": [
+   "target",
+   "identifier",
+   "value"
+  ],
+  "reasoning": "Reasoning: The second column contains numerical values like \"24\", \"17\", \"12\", etc., which are used to rank or identify the countries in the first column, such as Italy (24), Portugal (17), etc. The third column contains decimal fractions like \"1.0\", \"0.708333333333\", etc., which are derived from the second column's values (e.g., 1.0 corresponds to 24 when divided by 34, the sum of all second-column values) and represent a normalized or relative value associated with each country. The first column lists the country names, which are being ranked or evaluated based on the second and third columns. Therefore, the column types are [\"target\", \"identifier\", \"value\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 5,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ },
+ {
+  "table_id": "GitTables_41627",
+  "columns": [
+   [
+    "933 Robinson Passage Apt. 829\nStarkview, ME 60297",
+    "PSC 8034, Box 7103\nAPO AP 14029",
+    "29259 Smith Shoals\nNorth Cathyburgh, ME 31451",
+    "551 Casey Squares Apt. 209\nMichaelborough, MS 26297",
+    "2998 Willis Wall\nNorth Brian, PA 04610",
+    "164 Schultz Road\nLake Bryan, MD 86618"
+   ],
+   [
+    "Male",
+    "Male",
+    "Female",
+    "Other",
+    "Female",
+    "Other"
+   ],
+   [
+    "644557903",
+    "780786739",
+    "222908099",
+    "233593354",
+    "991555588",
+    "130726909"
+   ]
+  ],
+  "types": [
+   "email",
+   "gender",
+   "identifier"
+  ],
+  "reasoning": "Reasoning: The first column contains strings that include address details like \"933 Robinson Passage Apt. 829,\" \"North Cathyburgh, ME 31451,\" and \"Lake Bryan, MD 86618,\" which are typical email addresses formatted with a local part, domain, and top-level domain. The second column lists gender identifiers such as \"Male,\" \"Female,\" and \"Other,\" which categorize the individuals associated with the email addresses. The third column contains numerical sequences like \"644557903\" and \"991555588,\" which appear to be unique identifiers linked to the corresponding email addresses and gender in the first and second columns. Therefore, the column types are [\"email\", \"gender\", \"identifier\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 8,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ },
+ {
+  "table_id": "GitTables_17759",
+  "columns": [
+   [
+    "201",
+    "207",
+    "251",
+    "252",
+    "271"
+   ],
+   [
+    "Wuthering Heights",
+    "Jane Eyre",
+    "The Raven",
+    "Eleonora",
+    "Catweazle"
+   ],
+   [
+    "11.11",
+    "12.34",
+    "13.13",
+    "14.0",
+    "150.0"
+   ]
+  ],
+  "types": [
+   "identifier",
+   "title",
+   "price"
+  ],
+  "reasoning": "Reasoning: The first column contains numerical values like \"201\", \"207\", and \"251\", which are likely unique identifiers for items, as seen in the context of the second and third columns. The second column lists book titles such as \"Wuthering Heights\" and \"Jane Eyre\", which correspond to the identifiers in the first column, indicating that this column represents the title of each item. The third column contains decimal values like \"11.11\" and \"150.0\", which are clearly prices, as they align with the identifiers and titles in the other columns, suggesting this column holds the price of each item. Therefore, the column types are [\"identifier\", \"title\", \"price\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 7,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ },
+ {
+  "table_id": "GitTables_50436",
+  "columns": [
+   [
+    "txn_0IV4rIig6peNXzgDK3XAFbaN",
+    "txn_0IDYgiig6peNXzgDuNvLeoLR",
+    "txn_0IG5fvig6peNXzgD8jemrxAp",
+    "txn_0ILGCbig6peNXzgDqjp7xaaX",
+    "txn_0IO6DWig6peNXzgDF8qNjZNX",
+    "txn_0IROZoig6peNXzgDRsBjph8K"
+   ],
+   [
+    "-18759",
+    "2040000",
+    "117524",
+    "7239375",
+    "255360",
+    "438750"
+   ],
+   [
+    "usd",
+    "usd",
+    "usd",
+    "usd",
+    "usd",
+    "usd"
+   ],
+   [
+    "f39657a1847db73d9a2abb0bad3d31ae",
+    "d267c9d09a2d1e50f12635bd2b56ed29",
+    "0662d6089789e1fabd56c6d55e91ef09",
+    "612942eb1230077a0b1d066de5aba0db",
+    "b8de27e00022f92981c965125c15c22d",
+    "d3c18c425369d3c6b26126b7f791cf3f"
+   ],
+   [
+    "pending",
+    "pending",
+    "pending",
+    "pending",
+    "pending",
+    "pending"
+   ]
+  ],
+  "types": [
+   "identifier",
+   "amount",
+   "currency",
+   "description",
+   "status"
+  ],
+  "reasoning": "Reasoning: The first column contains unique alphanumeric strings like \"txn_0IV4rIig6peNXzgDK3XAFbaN,\" which appear to be identifiers for transactions, as each value is distinct and used as a reference in the table. The second column contains numeric values such as \"-18759\" and \"2040000,\" which represent monetary amounts, likely in the same currency as indicated by other columns. The third column consistently shows \"usd,\" indicating the currency for all transactions. The fourth column includes hexadecimal strings like \"f39657a1847db73d9a2abb0bad3d31ae,\" which are typical of cryptographic hashes or identifiers for related data, possibly transaction IDs or references. The fifth column uniformly contains \"pending,\" suggesting a status indicator for all transactions. Based on these patterns and the context provided by other columns, the column types are [\"identifier\", \"amount\", \"currency\", \"description\", \"status\"]. Therefore, the column types are [\"identifier\", \"amount\", \"currency\", \"description\", \"status\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 6,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ },
+ {
+  "table_id": "GitTables_116961",
+  "columns": [
+   [
+    "Caw",
+    "Caw!: magazine of Students for a Democratic Society",
+    "Free you",
+    "Free you",
+    "Henderson Station",
+    "NUC newsletter"
+   ],
+   [
+    "Students for a Democratic Society.",
+    "Students for a Democratic Society",
+    "Midpeninsula Free University",
+    "Minnesota Free University",
+    "State College Free Press.",
+    "The Conference."
+   ],
+   [
+    "English",
+    "English",
+    "English",
+    "English",
+    "English",
+    "English"
+   ]
+  ],
+  "types": [
+   "title",
+   "publisher",
+   "language"
+  ],
+  "reasoning": "Reasoning: The first column contains names like \"Caw Caw!\" and \"Free you Free you,\" which are clearly titles of publications, as indicated by the presence of other related titles in the same column (\"magazine of Students for a Democratic Society,\" \"NUC newsletter\"). The second column lists organizations or entities associated with these publications, such as \"Students for a Democratic Society\" and \"Midpeninsula Free University,\" which function as publishers or sponsors, linking back to the titles in the first column. The third column consistently contains the word \"English,\" which indicates the language of the publications, as seen with the context of the titles in the first column and their associated publishers in the second column. Therefore, the column types are [\"title\", \"publisher\", \"language\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 7,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ },
+ {
+  "table_id": "GitTables_14529",
+  "columns": [
+   [
+    "id_tax03",
+    "id_tax04",
+    "id_tax06",
+    "id_tax11",
+    "id_tax02",
+    "id_tax13"
+   ],
+   [
+    "VAT 15% rated sales",
+    "VAT 0% rated sales",
+    "VAT Exempt rated sales",
+    "VAT Out of Scope rated sales",
+    "Withholding 2% rated sales",
+    "Withholding 35% rated sales"
+   ],
+   [
+    "15.0",
+    "-2.0",
+    "-35.0",
+    "-15.0",
+    "15.0",
+    "-2.0"
+   ]
+  ],
+  "types": [
+   "identifier",
+   "name",
+   "amount"
+  ],
+  "reasoning": "Reasoning: The first column contains unique codes like \"id_tax03,\" \"id_tax04,\" and \"id_tax06,\" which appear to be identifiers for different tax categories, as they systematically vary and lack any other contextual meaning. The second column provides descriptive names for these categories, such as \"VAT 15% rated sales\" and \"Withholding 35% rated sales,\" which clearly define the type of tax each identifier corresponds to, linking the identifiers in the first column to their respective tax rates or classifications. The third column contains numerical values such as \"15.0,\" \"-2.0,\" and \"-35.0,\" which represent the percentage rates or financial impacts associated with each tax category, as seen in the context of the second column (e.g., \"15.0\" aligns with \"VAT 15% rated sales\"). Therefore, the column types are [\"identifier\", \"name\", \"amount\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 10,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ },
+ {
+  "table_id": "GitTables_29779",
+  "columns": [
+   [
+    "2012-10-01",
+    "2012-10-01",
+    "2012-10-01",
+    "2012-10-01",
+    "2012-10-01",
+    "2012-10-01"
+   ],
+   [
+    "2020-09-30",
+    "2021-09-30",
+    "2021-09-30",
+    "2022-09-30",
+    "2021-09-30",
+    "2022-09-30"
+   ],
+   [
+    "2020-04-13 00:00:00",
+    "2020-04-13 00:00:00",
+    "2020-04-13 00:00:00",
+    "2020-04-13 00:00:00",
+    "2020-05-11 00:00:00",
+    "2020-04-13 00:00:00"
+   ]
+  ],
+  "types": [
+   "startDate",
+   "endDate",
+   "dateCreated"
+  ],
+  "reasoning": "Reasoning: The first column contains consistent values like \"2012-10-01,\" which represent the start date of an event, as seen in the context of the other columns where related dates are referenced. The second column contains different values like \"2020-09-30\" and \"2021-09-30,\" which are later than the dates in the first column, indicating an end date or a deadline, as it aligns with the third column's creation date. The third column contains timestamps like \"2020-04-13 00:00:00,\" which are earlier than the start and end dates and represent the date and time when the record was created, as seen by its consistent placement before the other date columns. Therefore, the column types are [\"startDate\", \"endDate\", \"dateCreated\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 4,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ },
+ {
+  "table_id": "GitTables_44551",
+  "columns": [
+   [
+    "70",
+    "72",
+    "74",
+    "80",
+    "81",
+    "86"
+   ],
+   [
+    "guasch_2016",
+    "ferre_2017",
+    "redondo_2005",
+    "moreno_martinez_2014",
+    "gonzalez_nosti_2014",
+    "alonso_2015"
+   ],
+   [
+    "5",
+    "4",
+    "1",
+    "12",
+    "11",
+    "10"
+   ]
+  ],
+  "types": [
+   "identifier",
+   "name",
+   "position"
+  ],
+  "reasoning": "Reasoning: The first column contains numerical values like \"70\", \"72\", \"74\", etc., which appear to be unique identifiers for each row, as they do not relate directly to the other columns and seem to serve as primary keys. The second column includes names like \"guasch_2016\", \"ferre_2017\", etc., which are descriptive labels associated with the identifiers in the first column, suggesting these represent person names with additional years. The third column contains ordinal numbers like \"5\", \"4\", \"1\", etc., which likely indicate rankings or positions based on the context of the names and identifiers, as they follow a logical order that seems to rank the individuals. Therefore, the column types are [\"identifier\", \"name\", \"position\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 7,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ },
+ {
+  "table_id": "GitTables_84997",
+  "columns": [
+   [
+    "Aloe NE-3",
+    "Pumpkin NE-2",
+    "Pumpkin NE-1",
+    "Kale NW-2",
+    "Aloe NE-2",
+    "Aloe NW-1"
+   ],
+   [
+    "3 acres",
+    "3 acres",
+    "2 acres",
+    "1 acre",
+    "2 acres",
+    "3 acres"
+   ],
+   [
+    "Alert",
+    "Warning",
+    "OK",
+    "OK",
+    "Warning",
+    "OK"
+   ]
+  ],
+  "types": [
+   "name",
+   "size",
+   "status"
+  ],
+  "reasoning": "Reasoning: The first column contains plant names like \"Aloe\" and \"Pumpkin,\" which are distinct labels identifying the items in the table, while the second column provides numerical values like \"3 acres\" and \"2 acres\" that quantify the size of each plant, and the third column includes status descriptions such as \"Alert\" and \"OK\" that indicate the condition or state of each plant. The context of the second column (size) supports the first column (name) as the type of the plants being described, and the third column (status) provides additional information about each plant that is not related to its identity or quantity but rather to its condition. Therefore, the column types are [\"name\", \"size\", \"status\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 6,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ },
+ {
+  "table_id": "GitTables_2123",
+  "columns": [
+   [
+    "2051",
+    "2053",
+    "2054",
+    "2057",
+    "2059",
+    "2061"
+   ],
+   [
+    "TT2051",
+    "TT2053",
+    "TT2054",
+    "TT2057",
+    "TT2059",
+    "TT2061"
+   ],
+   [
+    "Extention Coord",
+    "LED Lamp",
+    "LED Lamp",
+    "Timer Outlet",
+    "Paint Roller",
+    "Sponge"
+   ]
+  ],
+  "types": [
+   "identifier",
+   "sku",
+   "name"
+  ],
+  "reasoning": "Reasoning: The first column contains numerical values like \"2051,\" \"2053,\" and \"2054,\" which appear to be sequential identifiers for products. The second column contains strings that start with \"TT\" followed by the same numbers from the first column, such as \"TT2051\" and \"TT2053,\" suggesting these are stock Keeping Units (SKUs) linked to the identifiers. The third column lists product attributes like \"Extention,\" \"Coord,\" \"LED Lamp,\" and \"Paint Roller,\" which describe the items, indicating these are names or descriptions. The context across columns shows the first column identifies products, the second provides their SKUs, and the third gives their names. Therefore, the column types are [\"identifier\", \"sku\", \"name\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 10,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ },
+ {
+  "table_id": "GitTables_105018",
+  "columns": [
+   [
+    "1,84 m",
+    "1,82 m",
+    "1,93 m",
+    "1,71 m",
+    "1,85 m",
+    "1,80 m"
+   ],
+   [
+    "Midfield - Attacking Midfield",
+    "Defence - Centre Back",
+    "Goalkeeper",
+    "Midfield",
+    "Midfield - Attacking Midfield",
+    "Midfield - Left Midfield"
+   ],
+   [
+    "2000-06-30",
+    "1995-10-08",
+    "2018-05-04",
+    "2015-11-07",
+    "2008-08-30",
+    "1998-03-15"
+   ],
+   [
+    "8208",
+    "8209",
+    "28768",
+    "40865",
+    "40874",
+    "40883"
+   ]
+  ],
+  "types": [
+   "height",
+   "position",
+   "birthDate",
+   "identifier"
+  ],
+  "reasoning": "Reasoning: The first column contains numerical values with units like \"1,84 m\" and \"1,71 m,\" which are clearly measurements of height. The second column lists roles such as \"Midfield,\" \"Defence,\" and \"Goalkeeper,\" which describe the position of the person in a sport. The third column includes dates like \"2000-06-30\" and \"1998-03-15,\" formatted as birth dates. The fourth column has unique numerical IDs like \"8208\" and \"40865,\" which likely serve as identifiers for each entry. Based on the presence of height measurements, position roles, birth dates, and unique identifiers in the respective columns, Therefore, the column types are [\"height\", \"position\", \"birthDate\", \"identifier\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 9,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ }
+]

@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.env
+log/
+smoke/
+# data: only the CoT examples are tracked; the reference vectors / caches are rebuilt by embed_refs.py and cta_ours.py --method rag
+data/*
+!data/cot_examples/
+data/cot_examples/_first_drafts/
+# predictions stay out of git, the summary tables are tracked
+outputs/*
+!outputs/*.md
+# superseded variants (kept on disk): bare-list CoT with repair
+cta_cot_v1_barelist.py
+cta_cot_repair.py

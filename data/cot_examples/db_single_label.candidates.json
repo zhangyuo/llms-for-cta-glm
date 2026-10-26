@@ -1,0 +1,532 @@
+[
+ {
+  "table_id": "GitTables_110390",
+  "columns": [
+   [
+    "AK",
+    "AL",
+    "AR",
+    "AZ",
+    "CA",
+    "CO"
+   ],
+   [
+    "1983",
+    "1983",
+    "1983",
+    "1983",
+    "1983",
+    "1983"
+   ],
+   [
+    "North",
+    "South",
+    "East",
+    "West",
+    "Mid-West",
+    "North"
+   ]
+  ],
+  "types": [
+   "state",
+   "year",
+   "region"
+  ],
+  "reasoning": "Reasoning: Based on the values in the first column (e.g., \"AK\", \"AL\", \"AR\"), these appear to be postal codes or abbreviations for states, as seen in the context of the third column which contains region names associated with these states (e.g., \"North\", \"South\"). The second column consistently contains the same value \"1983\" for all rows, suggesting it represents a year or a specific time period relevant to the states listed. The third column provides region labels (e.g., \"East\", \"West\") that correspond to the states in the first column, further confirming the context of states and their associated regions. Therefore, the column types are [\"state\", \"year\", \"region\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 8,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ },
+ {
+  "table_id": "GitTables_171897",
+  "columns": [
+   [
+    "ID for subject",
+    "Weight in kg at visit 1",
+    "Weight in kg at visit 2",
+    "Age in years",
+    "Gender of the subject",
+    "Race category"
+   ],
+   [
+    "Identifier for the human subject",
+    "Weight of the subject in kilograms at visit 1",
+    "Weight of the subject in kilograms at visit 2",
+    "Age of the subject in years",
+    "The biological sex of the subject",
+    "The categorical race of the subject"
+   ],
+   [
+    "xsd:decimal",
+    "decimal"
+   ]
+  ],
+  "types": [
+   "comment",
+   "definition",
+   "format"
+  ],
+  "reasoning": "Reasoning: The first column contains labels like \"ID for subject,\" \"Weight in kg at visit 1,\" and \"Gender of the subject,\" which describe the data being measured or recorded for each entry. The second column provides the full, descriptive names of these data points, such as \"Identifier for the human subject\" and \"The biological sex of the subject,\" serving as explanations or definitions for the corresponding entries in the first column. The third column contains specific data types like \"xsd:decimal\" and \"decimal,\" indicating the format or data structure of the values in the second column (e.g., \"Weight in kg at visit 1\" being a decimal). Therefore, the column types are [\"comment\", \"definition\", \"format\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 8,
+  "judge": {
+   "cites_cells": 1,
+   "uses_other_columns": 1,
+   "consistent": 5
+  },
+  "score": 8.0
+ },
+ {
+  "table_id": "GitTables_37657",
+  "columns": [
+   [
+    "Springfield",
+    "Springfield",
+    "Springfield",
+    "Springfield",
+    "Springfield",
+    "Springfield"
+   ],
+   [
+    "MA",
+    "MA",
+    "MA",
+    "MA",
+    "MA",
+    "MA"
+   ],
+   [
+    "Hampden",
+    "Hampden",
+    "Hampden",
+    "Hampden",
+    "Hampden",
+    "Hampden"
+   ]
+  ],
+  "types": [
+   "city",
+   "state",
+   "county"
+  ],
+  "reasoning": "Reasoning: Based on the repeated values in the first column like \"Springfield\" which is a common city name, the second column listing state abbreviations such as \"MA\" (Massachusetts), and the third column naming counties like \"Hampden\" which is a county in Massachusetts, it is clear that the first column represents cities, the second column indicates the state where the cities are located, and the third column specifies the county within that state. The consistency across all rows confirms that these relationships hold true for all entries, with \"Springfield\" being the city name, \"MA\" the state abbreviation, and \"Hampden\" the county. Therefore, the column types are [\"city\", \"state\", \"county\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 6,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ },
+ {
+  "table_id": "GitTables_181576",
+  "columns": [
+   [
+    "bnam",
+    "bsuf",
+    "bcat",
+    "btil",
+    "btsp",
+    "bfil"
+   ],
+   [
+    "Name",
+    "EditorSuffix",
+    "category",
+    "tilesets",
+    "tilesetSpecific",
+    "file"
+   ],
+   [
+    "string",
+    "string",
+    "destructableCategory",
+    "tilesetList",
+    "bool",
+    "model"
+   ]
+  ],
+  "types": [
+   "id",
+   "field",
+   "type"
+  ],
+  "reasoning": "Reasoning: The first column contains unique identifiers like \"bnam\", \"bsuf\", etc., which appear to serve as unique IDs for each entry, as they are distinct and used to reference specific entries in other columns. The second column provides descriptive field names such as \"Name\", \"EditorSuffix\", etc., which suggest it labels or describes the purpose of the corresponding value in the first column, making it a \"field\" type. The third column contains values like \"destructableCategory\", \"tilesetList\", and \"bool\", which represent the data type or category of the information, such as whether it's a category, list, or boolean, making it a \"type\". Therefore, the column types are [\"id\", \"field\", \"type\"].",
+  "quoted_share": 0.78,
+  "n_quoted": 9,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 12.777777777777779
+ },
+ {
+  "table_id": "GitTables_140703",
+  "columns": [
+   [
+    "Search for neutrinoless double-beta decay with the SuperNEMO demonstrator",
+    "$0\\nu\\beta\\beta$ sensitivity with the SuperNEMO demonstrator",
+    "Status of SuperNEMO Demonstrator ",
+    "Topological detection of $\\beta\\beta$-decay with NEMO-3 and SuperNEMO",
+    "Ultra-low Level Radon Assays in Gases",
+    "Search for Neutrinoless Double-$\\beta$ Decay of $^{100}$Mo in the final NEMO-3 dataset"
+   ],
+   [
+    "2017-07-07",
+    "2017-03-18",
+    "2016-08-05",
+    "2015-06-04",
+    "2015-03-18",
+    "2014-03-15"
+   ],
+   [
+    "Carla Macolino",
+    "Steven Calvez",
+    "Fr'ed'eric Perrot",
+    "Ruben Saakyan",
+    "Xin Ran Liu",
+    "Stefano Torre"
+   ]
+  ],
+  "types": [
+   "title",
+   "date",
+   "author"
+  ],
+  "reasoning": "Reasoning: The first column contains descriptive phrases like \"Search for neutrinoless double-beta decay with the SuperNEMO demonstrator\" and \"Ultra-low Level Radon Assays in Gases,\" which are clearly titles of research projects or experiments. The second column lists specific dates such as \"2017-07-07\" and \"2015-03-18,\" which correspond to the milestones or publication dates related to the projects mentioned in the first column. The third column includes names like \"Carla Macolino\" and \"Steven Calvez,\" which are associated with the projects as authors. Therefore, the column types are [\"title\", \"date\", \"author\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 6,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ },
+ {
+  "table_id": "GitTables_188892",
+  "columns": [
+   [
+    "6",
+    "0",
+    "38",
+    "6",
+    "38",
+    "37"
+   ],
+   [
+    "171,89",
+    "77,67",
+    "73,920006",
+    "118,770004",
+    "191,81",
+    "49,97"
+   ],
+   [
+    "1200",
+    "8",
+    "2709",
+    "0",
+    "507",
+    "208"
+   ],
+   [
+    "Decoração",
+    "Papel e Cia",
+    "Outros",
+    "Bebê",
+    "Decoração",
+    "Lembrancinhas"
+   ]
+  ],
+  "types": [
+   "position",
+   "price",
+   "weight",
+   "category"
+  ],
+  "reasoning": "Reasoning: The first column contains numerical values like \"6\", \"0\", \"38\", which likely represent ordinal ranks or positions in a competition or list, as seen in the context of the other columns. The second column has decimal values such as \"171,89\", \"77,67\", which are typical price formats, probably for products listed in the fourth column. The third column contains integers like \"1200\", \"8\", \"2709\", which seem to measure weight (e.g., \"2709\" likely corresponds to \"Outros\" in the fourth column, suggesting a weight measurement). The fourth column lists strings like \"Decoração\", \"Papel e Cia\", which describe product categories, aligning with the context of prices and weights. Therefore, the column types are [\"position\", \"price\", \"weight\", \"category\"].",
+  "quoted_share": 0.8,
+  "n_quoted": 10,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 12.8
+ },
+ {
+  "table_id": "GitTables_55159",
+  "columns": [
+   [
+    "12040390",
+    "12034171",
+    "12013912",
+    "12010376",
+    "12005847",
+    "11900697"
+   ],
+   [
+    "33",
+    "33",
+    "33",
+    "33",
+    "33",
+    "33"
+   ],
+   [
+    "Hwt",
+    "Hwt",
+    "Hwt",
+    "Hwt",
+    "Hwt",
+    "Hwt"
+   ],
+   [
+    "Indoor Rower",
+    "Indoor Rower",
+    "Indoor Rower",
+    "Indoor Rower",
+    "Indoor Rower",
+    "Indoor Rower"
+   ]
+  ],
+  "types": [
+   "id",
+   "age",
+   "weight",
+   "type"
+  ],
+  "reasoning": "Reasoning: The first column contains numeric values like \"12040390\" and \"12013912,\" which appear to be unique identifiers for each row, as there are no repeating numbers and no other column provides context that would explain these IDs. The second column shows consistent values like \"33,\" which likely represents a constant measurement unit or attribute (e.g., age in years) across all rows, as no variation is observed and no other column provides a basis for interpretation. The third column includes terms like \"Hwt,\" which likely stands for \"High Weight\" or a similar weight category, given the context of the second column suggesting measurements. The fourth column describes the activity or equipment type, such as \"Indoor Rower,\" which aligns with the weight-related context (suggesting an exercise or measurement related to rowing). Therefore, the column types are [\"id\", \"age\", \"weight\", \"type\"].",
+  "quoted_share": 0.83,
+  "n_quoted": 6,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 12.833333333333334
+ },
+ {
+  "table_id": "GitTables_187044",
+  "columns": [
+   [
+    "County of Hawaii",
+    "County of Hawaii",
+    "County of Hawaii",
+    "County of Hawaii",
+    "County of Hawaii",
+    "County of Hawaii"
+   ],
+   [
+    "7088 Carpenter Overpass Suite 735\nBobbyton, MI 01008",
+    "16396 Shawn Junction\nNew Nicolemouth, ND 60236",
+    "PSC 4080, Box 3513\nAPO AP 45818",
+    "4486 Olson Well\nNorth Kevin, CA 01707",
+    "67771 Christopher Courts Apt. 637\nPort Ronaldfurt, HI 33233",
+    "5561 Bishop Turnpike\nLake Kenneth, NY 79756"
+   ],
+   [
+    "poll19172834",
+    "poll19172834",
+    "poll60276226",
+    "poll60276226",
+    "poll30593437",
+    "poll30593437"
+   ]
+  ],
+  "types": [
+   "county",
+   "address",
+   "id"
+  ],
+  "reasoning": "Reasoning: The first column contains repeated references to \"County of Hawaii,\" indicating it is a consistent category label for all rows, so it is a \"county\". The second column includes diverse location-based descriptions like \"7088 Carpenter Overpass Suite 735\" and \"Bobbyton, MI 01008,\" which are addresses for different locations, so it is an \"address\". The third column lists unique numerical sequences such as \"poll19172834\" and \"poll60276226,\" which appear to be identifiers tied to the corresponding addresses in the second column, so it is an \"id\". Therefore, the column types are [\"county\", \"address\", \"id\"].",
+  "quoted_share": 0.75,
+  "n_quoted": 8,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 12.75
+ },
+ {
+  "table_id": "GitTables_96458",
+  "columns": [
+   [
+    "AppStore",
+    "Settings",
+    "Support",
+    "HeyMADS!",
+    "Dashboards",
+    "Digital Twin"
+   ],
+   [
+    "Explore, know and download other apps",
+    "Control user settings and configuration",
+    "See docs & seek help for MADS platform",
+    "Invoke voice assistant for MADS tasks",
+    "Make drag-n-drop no-code dashboards",
+    "Interact with the digital twin of a real assets"
+   ],
+   [
+    "Core",
+    "Core",
+    "Core",
+    "Core",
+    "Productivity",
+    "Productivity"
+   ]
+  ],
+  "types": [
+   "name",
+   "description",
+   "category"
+  ],
+  "reasoning": "Reasoning: The first column contains distinct names like \"AppStore,\" \"Settings,\" and \"Digital Twin,\" which serve as unique identifiers for different features or tools. The second column provides detailed explanations of what each item in the first column does, such as \"Explore, know and download other apps\" for \"AppStore,\" indicating this column describes the functionality. The third column categorizes these items, using terms like \"Core\" and \"Productivity\" to classify them, which aligns with the semantic type \"category.\" Therefore, the column types are [\"name\", \"description\", \"category\"].",
+  "quoted_share": 0.88,
+  "n_quoted": 8,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 12.875
+ },
+ {
+  "table_id": "GitTables_203739",
+  "columns": [
+   [
+    "n1",
+    "n2",
+    "n3",
+    "n4",
+    "n5",
+    "n6"
+   ],
+   [
+    "Animalia",
+    "Chordata",
+    "Mammalia",
+    "Carnivora",
+    "Canidae",
+    "Felidae"
+   ],
+   [
+    "Lynx",
+    "Lynx",
+    "Felis",
+    "Lynx",
+    "Lynx",
+    "Canis"
+   ]
+  ],
+  "types": [
+   "id",
+   "scientificName",
+   "genus"
+  ],
+  "reasoning": "Reasoning: The first column contains numerical identifiers like \"n1,\" \"n2,\" which are clearly used to uniquely identify each row, making it an \"id\" column. The second column lists biological classifications such as \"Animalia,\" \"Chordata,\" which are standard scientific names for taxonomy, indicating it is a \"scientificName\" column. The third column contains specific species names like \"Lynx,\" \"Felis,\" which correspond to the genus names in the second column (e.g., \"Lynx\" in the third column matches \"Lynx\" in the second column under the \"Mammalia\" classification), confirming it is a \"genus\" column. Therefore, the column types are [\"id\", \"scientificName\", \"genus\"].",
+  "quoted_share": 0.83,
+  "n_quoted": 12,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 12.833333333333334
+ },
+ {
+  "table_id": "GitTables_414",
+  "columns": [
+   [
+    "TaungthaWethet-T-1",
+    "ThaiphumRengkheng-T-7",
+    "AshoKokanTan-A-1",
+    "AshoLinde-A-11",
+    "UppuKyinDwe-U-5",
+    "LonpawKhoimalaung-U-9"
+   ],
+   [
+    "Taungtha (Wethet)",
+    "Thaiphum (Rengkheng)",
+    "Asho (Kokan Tan)",
+    "Asho (Linde)",
+    "Uppu (Kyin Dwe)",
+    "Lonpaw (Khoimalaung)"
+   ],
+   [
+    "Sino-Tibetan",
+    "Sino-Tibetan",
+    "Sino-Tibetan",
+    "Sino-Tibetan",
+    "Sino-Tibetan",
+    "Sino-Tibetan"
+   ]
+  ],
+  "types": [
+   "id",
+   "name",
+   "family"
+  ],
+  "reasoning": "Reasoning: The first column contains unique identifiers like \"TaungthaWethet-T-1,\" \"AshoKokanTan-A-1,\" etc., which appear to be specific codes or codes with extensions (e.g., \"-T-1,\" \"-A-1\"), suggesting these are IDs. The second column provides the full names corresponding to these IDs, such as \"Taungtha (Wethet)\" and \"Asho (Kokan Tan),\" indicating it represents the names associated with the IDs. The third column consistently shows the same value \"Sino-Tibetan\" across all rows, which is a category label, implying it describes the family or classification of the entries. Therefore, the column types are [\"id\", \"name\", \"family\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 7,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ },
+ {
+  "table_id": "GitTables_21233",
+  "columns": [
+   [
+    "tax_code_chart_root",
+    "tax_code_1",
+    "tax_code_2",
+    "tax_code_3",
+    "tax_code_4",
+    "tax_code_5"
+   ],
+   [
+    "ICMS",
+    "ICMS Subist",
+    "IPI",
+    "PIS",
+    "COFINS",
+    "IRPJ"
+   ],
+   [
+    "Códigos de Impostos Brasileiros",
+    "ICMS",
+    "ICMS Subist",
+    "IPI",
+    "PIS",
+    "COFINS"
+   ]
+  ],
+  "types": [
+   "id",
+   "code",
+   "name"
+  ],
+  "reasoning": "Reasoning: The first column contains identifiers like \"tax_code_chart_root,\" \"tax_code_1,\" \"tax_code_2,\" etc., which suggest a systematic naming convention for different tax codes, implying that the column represents a unique identifier for each tax code. The second column lists specific tax codes such as \"ICMS,\" \"IPI,\" and \"COFINS,\" which are standard tax names, indicating that this column provides the actual tax code names. The third column contains descriptive phrases like \"Códigos de Impostos Brasileiros\" and specific tax names like \"ICMS,\" \"Subist,\" etc., which serve as human-readable labels for the tax codes, making it a column for names. Therefore, the column types are [\"id\", \"code\", \"name\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 9,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ }
+]

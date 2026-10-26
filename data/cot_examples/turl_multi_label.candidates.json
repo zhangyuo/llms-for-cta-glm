@@ -1,0 +1,290 @@
+[
+ {
+  "table_id": "36021201-1",
+  "columns": [
+   [
+    "Li Jianbo Zhu Yafei Park Chil-sung Harminder Singh"
+   ],
+   [
+    "China China South Korea Japan India Malaysia Malaysia United Arab Emirates India"
+   ]
+  ],
+  "types": [
+   "sports.pro_athlete; people.person",
+   "location.country; location.location"
+  ],
+  "reasoning": "Reasoning: Based on the names in the first column like \"Li Jianbo\" and \"Park Chil-sung,\" which are personal names, and the second column listing countries like \"China\" and \"India,\" which are both countries and locations, it appears that the first column represents people, and the second column indicates either the country they are from or a general location. The first column's entries are clearly names of individuals (people), and the second column's entries are names of countries (location.country) or specific locations (location.location), which can also be countries. Therefore, the column types are [\"sports.pro_athlete; people.person\", \"location.country; location.location\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 4,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ },
+ {
+  "table_id": "37330069-2",
+  "columns": [
+   [
+    "CRO JPN KOR HKG JPN UZB JPN KOR"
+   ],
+   [
+    "Donna Vekić Erika Sema Chan Wing-yau Nigina Abduraimova"
+   ]
+  ],
+  "types": [
+   "location.country; location.location",
+   "sports.pro_athlete; people.person"
+  ],
+  "reasoning": "Reasoning: Based on the names in the first column like \"CRO\" (Croatia), \"JPN\" (Japan), \"KOR\" (South Korea), \"HKG\" (Hong Kong), \"UZB\" (Uzbekistan), which are country codes, and the context of the second column containing names like \"Donna Vekić\" (a tennis player) and \"Erika Sema\" (a badminton player), it appears the first column represents locations (countries or regions) and the second column lists professional athletes associated with those locations. The combination of a country code with an athlete's name implies a relationship between a sports location and a professional athlete, making the first column \"location.country; location.location\" and the second column \"sports.pro_athlete; people.person\". Therefore, the column types are [\"location.country; location.location\", \"sports.pro_athlete; people.person\"].",
+  "quoted_share": 0.78,
+  "n_quoted": 9,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 12.777777777777779
+ },
+ {
+  "table_id": "23248804-3",
+  "columns": [
+   [
+    "Raphaël Poirée Ole Einar Bjørndalen Sven Fischer"
+   ],
+   [
+    "FRA NOR GER"
+   ]
+  ],
+  "types": [
+   "sports.pro_athlete; people.person",
+   "location.country; location.location"
+  ],
+  "reasoning": "Reasoning: Based on the names in the first column like \"Raphaël,\" \"Poirée,\" and the second column containing country codes like \"FRA,\" \"NOR,\" and \"GER,\" it appears that the first column represents athletes, and the second column indicates their nationalities. The first column contains full names, which are associated with the nationalities in the second column (e.g., \"Raphaël\" is paired with \"FRA,\" indicating the athlete's country). The second column contains ISO country codes, which are also valid as general location identifiers. Therefore, the column types are [\"sports.pro_athlete; people.person\", \"location.country; location.location\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 7,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ },
+ {
+  "table_id": "18045808-7",
+  "columns": [
+   [
+    "Goathland Grosmont Gelert's Farm halt"
+   ],
+   [
+    "Goathland Grosmont Porthmadog"
+   ]
+  ],
+  "types": [
+   "metropolitan_transit.transit_stop; location.location",
+   "location.citytown; location.administrative_division; location.location"
+  ],
+  "reasoning": "Reasoning: The first column contains place names like \"Goathland\" and \"Grosmont,\" which are specific locations, and \"halt\" which suggests a stopping point, indicating it represents transit stops or locations. The second column lists these same place names alongside \"Porthmadog,\" which is a citytown and also an administrative division, showing that this column categorizes locations as either citytowns, administrative divisions, or general locations, with \"Porthmadog\" serving as a context for these classifications. Therefore, the column types are [\"metropolitan_transit.transit_stop; location.location\", \"location.citytown; location.administrative_division; location.location\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 5,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ },
+ {
+  "table_id": "15767630-11",
+  "columns": [
+   [
+    "Ben Fouhy Steven Ferguson Steven Ferguson Mike Walker Erin Taylor"
+   ],
+   [
+    "Men's K-1 1000 m Men's K-1 500 m Men's K-2 1000 m Women's K-1 500 m"
+   ]
+  ],
+  "types": [
+   "sports.pro_athlete; people.person",
+   "time.event; olympics.olympic_event_competition"
+  ],
+  "reasoning": "Reasoning: Column 1 contains names like \"Ben Fouhy,\" \"Steven Ferguson,\" and \"Erin Taylor,\" which are human names, indicating that it represents individuals. Specifically, the context of the table suggests these are athletes participating in sports events, so the column represents \"sports.pro_athlete; people.person.\" Column 2 contains phrases like \"Men's K-1 1000 m\" and \"Women's K-1 500 m,\" which describe specific events within sports competitions, including the type of event (e.g., \"K-1\") and the distance (e.g., \"1000 m\"). This indicates that the column represents the events or competitions the athletes participated in, which can be categorized as \"time.event; olympics.olympic_event_competition.\" Therefore, the column types are [\"sports.pro_athlete; people.person\", \"time.event; olympics.olympic_event_competition\"].",
+  "quoted_share": 0.78,
+  "n_quoted": 9,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 12.777777777777779
+ },
+ {
+  "table_id": "23843531-13",
+  "columns": [
+   [
+    "Alianza Atletico Melgar Sport Boys Colegio Nacional Iquitos"
+   ],
+   [
+    "Universitario Sporting Cristal León de Huánuco Defensor Lima"
+   ]
+  ],
+  "types": [
+   "sports.sports_team; soccer.football_team; organization.organization",
+   "sports.sports_team; soccer.football_team"
+  ],
+  "reasoning": "Reasoning: Based on the names of teams like \"Alianza Atletico\" and \"Universitario\" in the first column, and the presence of other team names such as \"Sport Boys\" and \"León de Huánuco\" in the second column, it appears that both columns represent teams, likely in the context of sports. The first column includes teams like \"Alianza Atletico\" (a soccer team) and \"Melgar\" (another soccer team), suggesting that the first column contains \"sports.sports_team; soccer.football_team; organization.organization\" because these are indeed soccer teams, which fall under the broader categories of sports teams and organizations. The second column includes teams like \"Sport Boys\" and \"León de Huánuco,\" which are also soccer teams, confirming that the second column is of type \"sports.sports_team; soccer.football_team.\" Therefore, the column types are [\"sports.sports_team; soccer.football_team; organization.organization\", \"sports.sports_team; soccer.football_team\"].",
+  "quoted_share": 0.8,
+  "n_quoted": 10,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 12.8
+ },
+ {
+  "table_id": "26188218-3",
+  "columns": [
+   [
+    "Jorge Luque Pedro Ríos Stéphane Porato Mehrdad Oladi"
+   ],
+   [
+    "Córdoba Getafe Malavan"
+   ]
+  ],
+  "types": [
+   "sports.pro_athlete; soccer.football_player; people.person",
+   "sports.sports_team; soccer.football_team"
+  ],
+  "reasoning": "Reasoning: Based on the names in Column 1 like \"Jorge Luque\" and \"Stéphane Porato,\" which are individuals associated with sports, and the reference to \"Córdoba\" in Column 2, which is a sports team, it appears that Column 1 represents athletes. The mention of \"Getafe\" and \"Malavan\" in Column 2 further confirms that Column 2 refers to sports teams, likely football teams, given the context. The cell values in Column 1 are names of people, and the cell values in Column 2 are names of teams, aligning with the types \"sports.pro_athlete; soccer.football_player; people.person\" for Column 1 and \"sports.sports_team; soccer.football_team\" for Column 2. Therefore, the column types are [\"sports.pro_athlete; soccer.football_player; people.person\", \"sports.sports_team; soccer.football_team\"].",
+  "quoted_share": 0.71,
+  "n_quoted": 7,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 12.714285714285714
+ },
+ {
+  "table_id": "25689742-1",
+  "columns": [
+   [
+    "Nagoya Grampus Nagoya Grampus Nagoya Grampus Nagoya Grampus Nagoya Grampus"
+   ],
+   [
+    "2009 2010 2011 2012"
+   ]
+  ],
+  "types": [
+   "sports.sports_team; soccer.football_team; organization.organization",
+   "sports.sports_league_season; time.event"
+  ],
+  "reasoning": "Reasoning: Column 1 contains team names like \"Nagoya Grampus\" repeated across all rows, indicating it represents a specific team consistent throughout the table. This fits the semantic types \"sports.sports_team; soccer.football_team; organization.organization\" as Nagoya Grampus is a well-known Japanese football club, which is a type of sports team, specifically in soccer, and also a recognized organization. Column 2 lists years such as \"2009\", \"2010\", \"2011\", and \"2012\", which correspond to seasons or time periods associated with the team's performance, fitting the types \"sports.sports_league_season; time.event\" since these years represent the seasons in which the team competed in a league, and each year is a distinct event in time. Therefore, the column types are [\"sports.sports_team; soccer.football_team; organization.organization\", \"sports.sports_league_season; time.event\"].",
+  "quoted_share": 0.71,
+  "n_quoted": 7,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 12.714285714285714
+ },
+ {
+  "table_id": "2439721-1",
+  "columns": [
+   [
+    "Tillamook Washington Washington Washington Washington"
+   ],
+   [
+    "Tillamook Glenwood Banks"
+   ]
+  ],
+  "types": [
+   "location.us_county; location.administrative_division; location.location",
+   "location.citytown; location.location"
+  ],
+  "reasoning": "Reasoning: The first column contains names like \"Tillamook\" and \"Washington,\" which are associated with geographical entities. \"Tillamook\" appears to be a city or town name, as it is paired with \"Glenwood\" and \"Banks\" in the second column, suggesting these are locations or entities within Tillamook, consistent with the type \"location.citytown; location.location.\" The second column lists specific locations (\"Glenwood\" and \"Banks\") that are likely subdivisions or places within the broader \"Tillamook\" area, aligning with \"location.administrative_division; location.location\" for the first column, as \"Washington\" itself is a state (admin_division) and also a location. Therefore, the column types are [\"location.us_county; location.administrative_division; location.location\", \"location.citytown; location.location\"].",
+  "quoted_share": 0.82,
+  "n_quoted": 11,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 12.818181818181818
+ },
+ {
+  "table_id": "27631756-3",
+  "columns": [
+   [
+    "Al Ain Al Wasl Al-Ahli Al-Wahda"
+   ],
+   [
+    "Sérgio Farias David O'Leary László Bölöni"
+   ]
+  ],
+  "types": [
+   "sports.sports_team; organization.organization",
+   "sports.pro_athlete; soccer.football_player; people.person"
+  ],
+  "reasoning": "Reasoning: Based on the names of teams in the first column like \"Al Ain\" and \"Al Wasl\" and the presence of known soccer managers such as \"Sérgio Farias\" and \"David O'Leary\" in the second column, it appears that the first column represents soccer teams and the second column lists the managers of those teams. The names in the first column are consistent with sports teams, and the names in the second column are well-known professional athletes (managers) associated with those teams, as seen by the context match between \"Al Wasl\" and \"David O'Leary\" (a soccer player/manager). Therefore, the column types are [\"sports.sports_team; organization.organization\", \"sports.pro_athlete; soccer.football_player; people.person\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 6,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ },
+ {
+  "table_id": "17302001-1",
+  "columns": [
+   [
+    "Chittenden Chittenden Franklin"
+   ],
+   [
+    "Essex Westford Fairfax"
+   ]
+  ],
+  "types": [
+   "location.administrative_division; location.location; location.us_county",
+   "location.citytown; location.location"
+  ],
+  "reasoning": "Reasoning: The values in Column 1, such as \"Chittenden,\" \"Essex,\" and \"Franklin,\" are names of administrative divisions or regions, which aligns with the type \"location.administrative_division; location.location; location.us_county\" because these names represent areas with administrative or geographical significance. Column 2 contains names like \"Essex,\" \"Westford,\" and \"Fairfax,\" which are typically cities or towns, fitting the type \"location.citytown; location.location\" as these names denote populated places within a geographical context. The context of the table suggests that Column 1 provides broader administrative or county-level divisions, while Column 2 focuses on more specific city or town locations within those broader areas, reinforcing the types of both columns. Therefore, the column types are [\"location.administrative_division; location.location; location.us_county\", \"location.citytown; location.location\"].",
+  "quoted_share": 0.75,
+  "n_quoted": 8,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 12.75
+ },
+ {
+  "table_id": "34138620-3",
+  "columns": [
+   [
+    "Sint-Truiden Kortrijk Cercle Brugge"
+   ],
+   [
+    "Anderlecht Standard Liège Sporting"
+   ]
+  ],
+  "types": [
+   "sports.sports_team; soccer.football_team; organization.organization",
+   "sports.sports_team; soccer.football_team"
+  ],
+  "reasoning": "Reasoning: Based on the names of teams in the first column like \"Sint-Truiden\" and \"Anderlecht\" and their counterparts in the second column like \"Standard\" and \"Liège,\" it is clear that both columns represent teams in the sport of soccer, as indicated by the presence of names that are commonly associated with Belgian football clubs. The first column includes teams such as \"Sint-Truiden\" and \"Cercle Brugge,\" which are known soccer clubs, while the second column features teams like \"Anderlecht\" and \"Standard,\" also recognized as prominent soccer teams in Belgium. Additionally, the names in both columns are specific organizations representing sports teams, which fits the types \"sports.sports_team\" and \"organization.organization\" for the first column, and \"sports.sports_team\" for the second column. Therefore, the column types are [\"sports.sports_team; soccer.football_team; organization.organization\", \"sports.sports_team; soccer.football_team\"].",
+  "quoted_share": 0.73,
+  "n_quoted": 11,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 12.727272727272727
+ }
+]

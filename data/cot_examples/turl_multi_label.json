@@ -1,0 +1,104 @@
+{
+ "status": "auto_selected",
+ "dataset": "turl",
+ "setting": "multi_label",
+ "seed": 0,
+ "examples": [
+  {
+   "table_id": "36021201-1",
+   "columns": [
+    [
+     "Li Jianbo Zhu Yafei Park Chil-sung Harminder Singh"
+    ],
+    [
+     "China China South Korea Japan India Malaysia Malaysia United Arab Emirates India"
+    ]
+   ],
+   "types": [
+    "sports.pro_athlete; people.person",
+    "location.country; location.location"
+   ],
+   "reasoning": "Reasoning: Based on the names in the first column like \"Li Jianbo\" and \"Park Chil-sung,\" which are personal names, and the second column listing countries like \"China\" and \"India,\" which are both countries and locations, it appears that the first column represents people, and the second column indicates either the country they are from or a general location. The first column's entries are clearly names of individuals (people), and the second column's entries are names of countries (location.country) or specific locations (location.location), which can also be countries. Therefore, the column types are [\"sports.pro_athlete; people.person\", \"location.country; location.location\"].",
+   "quoted_share": 1.0,
+   "n_quoted": 4,
+   "judge": {
+    "cites_cells": 4,
+    "uses_other_columns": 3,
+    "consistent": 5
+   },
+   "score": 13.0
+  },
+  {
+   "table_id": "18045808-7",
+   "columns": [
+    [
+     "Goathland Grosmont Gelert's Farm halt"
+    ],
+    [
+     "Goathland Grosmont Porthmadog"
+    ]
+   ],
+   "types": [
+    "metropolitan_transit.transit_stop; location.location",
+    "location.citytown; location.administrative_division; location.location"
+   ],
+   "reasoning": "Reasoning: The first column contains place names like \"Goathland\" and \"Grosmont,\" which are specific locations, and \"halt\" which suggests a stopping point, indicating it represents transit stops or locations. The second column lists these same place names alongside \"Porthmadog,\" which is a citytown and also an administrative division, showing that this column categorizes locations as either citytowns, administrative divisions, or general locations, with \"Porthmadog\" serving as a context for these classifications. Therefore, the column types are [\"metropolitan_transit.transit_stop; location.location\", \"location.citytown; location.administrative_division; location.location\"].",
+   "quoted_share": 1.0,
+   "n_quoted": 5,
+   "judge": {
+    "cites_cells": 4,
+    "uses_other_columns": 3,
+    "consistent": 5
+   },
+   "score": 13.0
+  },
+  {
+   "table_id": "27631756-3",
+   "columns": [
+    [
+     "Al Ain Al Wasl Al-Ahli Al-Wahda"
+    ],
+    [
+     "Sérgio Farias David O'Leary László Bölöni"
+    ]
+   ],
+   "types": [
+    "sports.sports_team; organization.organization",
+    "sports.pro_athlete; soccer.football_player; people.person"
+   ],
+   "reasoning": "Reasoning: Based on the names of teams in the first column like \"Al Ain\" and \"Al Wasl\" and the presence of known soccer managers such as \"Sérgio Farias\" and \"David O'Leary\" in the second column, it appears that the first column represents soccer teams and the second column lists the managers of those teams. The names in the first column are consistent with sports teams, and the names in the second column are well-known professional athletes (managers) associated with those teams, as seen by the context match between \"Al Wasl\" and \"David O'Leary\" (a soccer player/manager). Therefore, the column types are [\"sports.sports_team; organization.organization\", \"sports.pro_athlete; soccer.football_player; people.person\"].",
+   "quoted_share": 1.0,
+   "n_quoted": 6,
+   "judge": {
+    "cites_cells": 4,
+    "uses_other_columns": 3,
+    "consistent": 5
+   },
+   "score": 13.0
+  },
+  {
+   "table_id": "2439721-1",
+   "columns": [
+    [
+     "Tillamook Washington Washington Washington Washington"
+    ],
+    [
+     "Tillamook Glenwood Banks"
+    ]
+   ],
+   "types": [
+    "location.us_county; location.administrative_division; location.location",
+    "location.citytown; location.location"
+   ],
+   "reasoning": "Reasoning: The first column contains names like \"Tillamook\" and \"Washington,\" which are associated with geographical entities. \"Tillamook\" appears to be a city or town name, as it is paired with \"Glenwood\" and \"Banks\" in the second column, suggesting these are locations or entities within Tillamook, consistent with the type \"location.citytown; location.location.\" The second column lists specific locations (\"Glenwood\" and \"Banks\") that are likely subdivisions or places within the broader \"Tillamook\" area, aligning with \"location.administrative_division; location.location\" for the first column, as \"Washington\" itself is a state (admin_division) and also a location. Therefore, the column types are [\"location.us_county; location.administrative_division; location.location\", \"location.citytown; location.location\"].",
+   "quoted_share": 0.82,
+   "n_quoted": 11,
+   "judge": {
+    "cites_cells": 4,
+    "uses_other_columns": 3,
+    "consistent": 5
+   },
+   "score": 12.818181818181818
+  }
+ ]
+}

@@ -1,0 +1,144 @@
+{
+ "status": "auto_selected",
+ "dataset": "biodiv_wiki",
+ "setting": "multi_label",
+ "seed": 0,
+ "examples": [
+  {
+   "table_id": "d4c54ecd718449e19a14216c55803455",
+   "columns": [
+    [
+     "2008",
+     "2009",
+     "2010",
+     "2011",
+     "2012",
+     "2013"
+    ],
+    [
+     "1.23441157",
+     "-0.855548417",
+     "-0.88724",
+     "-0.871601083",
+     "-0.33607405",
+     "-0.3986075"
+    ]
+   ],
+   "types": [
+    "calendar year (Q3186692); year (Q577)",
+    "use of land or building (Q96337207); intensity (Q1061524)"
+   ],
+   "reasoning": "Reasoning: The first column contains values like \"2008\", \"2009\", \"2010\", \"2011\", \"2012\", and \"2013\", which are numerical representations of calendar years, specifically ending in \"08\", \"09\", \"10\", \"11\", \"12\", and \"13\", indicating they are likely years ending in the 2000s. This strongly suggests the true type of this column is \"calendar year (Q3186692); year (Q577)\". The second column contains numerical values such as \"1.23441157\", \"-0.855548417\", \"-0.88724\", \"-0.871601083\", \"-0.33607405\", and \"-0.3986075\", which are decimal numbers that likely represent a quantitative measure of intensity or usage. The context of the table, with the first column being years, implies that the second column could be a measure of some activity or usage over time, aligning with the true type \"use of land or building (Q96337207); intensity (Q1061524)\". Therefore, the column types are [\"calendar year (Q3186692); year (Q577)\", \"use of land or building (Q96337207); intensity (Q1061524)\"].",
+   "quoted_share": 0.9,
+   "n_quoted": 20,
+   "judge": {
+    "cites_cells": 5,
+    "uses_other_columns": 4,
+    "consistent": 5
+   },
+   "score": 14.9
+  },
+  {
+   "table_id": "23ec62734eee41768969b817069b4011",
+   "columns": [
+    [
+     "Nuuered Mals Dog",
+     "Neutered Male Cat",
+     "Spaed Femalp Ckt",
+     "Neutered Male Dog",
+     "Other",
+     "Intact Female Dog"
+    ],
+    [
+     "Neutered Male",
+     "Neutered Male",
+     "Spayed Female",
+     "Neutered Male",
+     "Unknown",
+     "Intact Female"
+    ]
+   ],
+   "types": [
+    "pet (Q39201); domesticated mammal (Q57814795)",
+    "gender identity (Q48264); sex of humans (Q4369513)"
+   ],
+   "reasoning": "Reasoning: The first column contains terms like \"Neutered Male Cat,\" \"Spayed Female,\" and \"Intact Female Dog,\" which describe animals with specific biological and behavioral characteristics, including neutering status, gender, and species. These terms point to the concept of \"pet\" (Q39201), a subset of \"domesticated mammal\" (Q57814795), as seen in cells like \"Neutered Male Cat\" and \"Intact Female Dog.\" The second column provides additional context, listing \"Neutered Male,\" \"Spayed Female,\" and \"Intact Female,\" which are classifications of gender identity (Q48264) and sex of humans (Q4369513), aligning with the biological descriptions in the first column. Therefore, the column types are [\"pet (Q39201); domesticated mammal (Q57814795)\", \"gender identity (Q48264); sex of humans (Q4369513)\"].",
+   "quoted_share": 0.8,
+   "n_quoted": 10,
+   "judge": {
+    "cites_cells": 4,
+    "uses_other_columns": 3,
+    "consistent": 5
+   },
+   "score": 12.8
+  },
+  {
+   "table_id": "a407fa84d55d4072945ac61346150d03",
+   "columns": [
+    [
+     "Alb",
+     "Alb",
+     "Alb",
+     "Alb",
+     "Alb",
+     "Alb"
+    ],
+    [
+     "Asparagine acid",
+     "Threonine",
+     "Serine",
+     "Glutamic acid",
+     "Proline",
+     "Glycine"
+    ]
+   ],
+   "types": [
+    "biosphere reserve (Q158454); biosphere reserve (Q61453609); Special Protection Area (Q2463705)",
+    "amino acid (Q8066); chemical compound (Q11173)"
+   ],
+   "reasoning": "Reasoning: The first column lists names like \"Asparagine acid\" and \"Threonine\" alongside repeated \"Alb,\" suggesting that the first column contains biological terms associated with a specific location or context, while \"Alb\" may be a placeholder or part of the name. The second column provides specific chemical classifications, such as \"Asparagine acid\" being an \"amino acid (Q8066)\" and \"Glycine\" being a \"chemical compound (Q11173),\" indicating that this column describes the chemical nature of the substances. The context of both columns, particularly the biological terms in the first column and the chemical classifications in the second, aligns with the true types [\"biosphere reserve (Q158454); biosphere reserve (Q61453609); Special Protection Area (Q2463705)\", \"amino acid (Q8066); chemical compound (Q11173)\"]. Therefore, the column types are [\"biosphere reserve (Q158454); biosphere reserve (Q61453609); Special Protection Area (Q2463705)\", \"amino acid (Q8066); chemical compound (Q11173)\"].",
+   "quoted_share": 0.78,
+   "n_quoted": 9,
+   "judge": {
+    "cites_cells": 4,
+    "uses_other_columns": 3,
+    "consistent": 5
+   },
+   "score": 12.777777777777779
+  },
+  {
+   "table_id": "217d8c0c33a74bb28a55efffcb047885",
+   "columns": [
+    [
+     "Dog",
+     "Cat",
+     "Cat",
+     "Dog",
+     "Other",
+     "Dog"
+    ],
+    [
+     "Neutered Male",
+     "Neutered Male",
+     "Spayed Female",
+     "Neutered Male",
+     "Unknown",
+     "Intact Female"
+    ]
+   ],
+   "types": [
+    "pet (Q39201); domesticated mammal (Q57814795)",
+    "gender identity (Q48264); sex of humans (Q4369513)"
+   ],
+   "reasoning": "Reasoning: Based on the values in Column 1, such as \"Dog\" and \"Cat,\" which are common domesticated animals, Column 1 represents types of pets or domesticated mammals, as seen in the true type \"pet (Q39201); domesticated mammal (Q57814795).\" Column 2 contains gender-related terms like \"Neutered Male,\" \"Spayed Female,\" and \"Intact Female,\" which describe the gender identity and sex of the animals, aligning with the true type \"gender identity (Q48264); sex of humans (Q4369513).\" The context of Column 1 (e.g., \"Dog\" paired with \"Neutered Male\") further supports that Column 2 provides information about the gender or sex of the pets listed. Therefore, the column types are [\"pet (Q39201); domesticated mammal (Q57814795)\", \"gender identity (Q48264); sex of humans (Q4369513)\"].",
+   "quoted_share": 0.78,
+   "n_quoted": 9,
+   "judge": {
+    "cites_cells": 4,
+    "uses_other_columns": 3,
+    "consistent": 5
+   },
+   "score": 12.777777777777779
+  }
+ ]
+}

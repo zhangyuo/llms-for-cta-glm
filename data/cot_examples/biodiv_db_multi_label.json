@@ -1,0 +1,180 @@
+{
+ "status": "auto_selected",
+ "dataset": "biodiv_db",
+ "setting": "multi_label",
+ "seed": 0,
+ "examples": [
+  {
+   "table_id": "89e72a749d764c1aacd9284e01c412a4",
+   "columns": [
+    [
+     "2015 (September)",
+     "2015 (July)",
+     "2015 (August)",
+     "2016 (September)",
+     "2015 (July)",
+     "2015 (September)"
+    ],
+    [
+     "D.glaucifolia",
+     "D.glaucifolia",
+     "D.glaucifolia",
+     "D.glaucifolia",
+     "C.glauca",
+     "C.glauca"
+    ]
+   ],
+   "types": [
+    "Calendar_year; Year; TimePeriod",
+    "Species; Plant; Eukaryote"
+   ],
+   "reasoning": "Reasoning: The first column contains values like \"2015 (September)\" and \"2016 (September)\", which include both a year and a month or a year and a specific point in time, indicating it represents a time period within a calendar year. The presence of \"2015\" as a standalone value in the same column further suggests it also encodes the year. The second column lists species names such as \"D.glaucifolia\" and \"C.glauca\", which are biological classifications, implying it represents a species or a type of plant, and since plants are eukaryotes, this column can also be categorized as such. Therefore, the column types are [\"Calendar_year; Year; TimePeriod\", \"Species; Plant; Eukaryote\"].",
+   "quoted_share": 1.0,
+   "n_quoted": 5,
+   "judge": {
+    "cites_cells": 4,
+    "uses_other_columns": 3,
+    "consistent": 5
+   },
+   "score": 13.0
+  },
+  {
+   "table_id": "a407fa84d55d4072945ac61346150d03",
+   "columns": [
+    [
+     "Alb",
+     "Alb",
+     "Alb",
+     "Alb",
+     "Alb",
+     "Alb"
+    ],
+    [
+     "Osmia bicornis",
+     "Osmia bicornis",
+     "Osmia bicornis",
+     "Osmia bicornis",
+     "Osmia bicornis",
+     "Osmia bicornis"
+    ],
+    [
+     "Asparagine acid",
+     "Threonine",
+     "Serine",
+     "Glutamic acid",
+     "Proline",
+     "Glycine"
+    ]
+   ],
+   "types": [
+    "Biosphere_reserve; Special_Protection_Area",
+    "Species; Osmia_bicornis",
+    "Chemical_compound; Amino_acid"
+   ],
+   "reasoning": "Reasoning: Based on the values in Column 1, all entries are \"Alb,\" which suggests it is a placeholder or identifier with no semantic meaning beyond its repetition. Column 2 consistently lists \"Osmia bicornis,\" a specific species name, indicating that this column represents the species associated with each entry. Column 3 contains biochemical terms such as \"Asparagine acid,\" \"Threonine,\" \"Serine,\" \"Glutamic acid,\" \"Proline,\" and \"Glycine,\" all of which are amino acids or related chemical compounds, suggesting this column represents chemical substances. The context of Columns 2 and 3 implies that the table may describe a biosphere reserve or special protection area where \"Osmia bicornis\" interacts with these amino acids, reinforcing Column 1's role as a generic identifier. Therefore, the column types are [\"Biosphere_reserve; Special_Protection_Area\", \"Species; Osmia_bicornis\", \"Chemical_compound; Amino_acid\"].",
+   "quoted_share": 1.0,
+   "n_quoted": 9,
+   "judge": {
+    "cites_cells": 4,
+    "uses_other_columns": 3,
+    "consistent": 5
+   },
+   "score": 13.0
+  },
+  {
+   "table_id": "bd00b752eba94953882023490ade0978",
+   "columns": [
+    [
+     "US AIRWAYS*,LAGUARDIA NY",
+     "AMERICAN AIRLINES,DALLAS/FORT WORTH INTL ARPT",
+     "BUSINESS,LAKEFRONT AIRPORT",
+     "ALASKA AIRLINES,SEATTLE-TACOMA INTL",
+     "COMAIR AIRLINES,NORFOLK INTL",
+     "AMERICAN AIRLINES,GUAYAQUIL/S BOLIVAR"
+    ],
+    [
+     "New York",
+     "Texas",
+     "Louisiana",
+     "Washington",
+     "Virginia",
+     "Delaware"
+    ],
+    [
+     "Unknown bird - medium",
+     "Rock pigeon",
+     "European starling",
+     "European starling",
+     "European starling",
+     "Unknown bird - small"
+    ]
+   ],
+   "types": [
+    "Airline; Company",
+    "U.S._state; Country",
+    "Species; Bird; Animal; Eukaryote"
+   ],
+   "reasoning": "Reasoning: The first column contains names like \"US AIRWAYS\", \"AMERICAN AIRLINES\", and \"ALASKA AIRLINES\", which are airline names, while \"COMAIR AIRLINES\" is also an airline, indicating that the first column represents airlines. The cell \"US AIRWAYS*,LAGUARDIA NY\" includes both the airline name \"US AIRWAYS\" and the location \"LAGUARDIA NY,\" suggesting a combination of airline and company name or location. The second column lists states like \"New York\", \"Texas\", and \"Louisiana\", which are U.S. states, while \"Virginia\" and \"Delaware\" are also states, confirming it represents U.S._state; Country. The third column contains species names such as \"Rock pigeon\", \"European starling\", and \"Unknown bird\", along with descriptions like \"medium\" and \"small\", indicating it represents Species; Bird; Animal; Eukaryote. Therefore, the column types are [\"Airline; Company\", \"U.S._state; Country\", \"Species; Bird; Animal; Eukaryote\"].",
+   "quoted_share": 1.0,
+   "n_quoted": 17,
+   "judge": {
+    "cites_cells": 4,
+    "uses_other_columns": 3,
+    "consistent": 5
+   },
+   "score": 13.0
+  },
+  {
+   "table_id": "c09226e97dd0468b8ecb5893332bfc14",
+   "columns": [
+    [
+     "48.4",
+     "48.38",
+     "48.41",
+     "48.38",
+     "48.4",
+     "48.4"
+    ],
+    [
+     "9.34",
+     "9.47",
+     "9.53",
+     "9.42",
+     "9.44",
+     "9.44"
+    ],
+    [
+     "2.77269794",
+     "-2.45405123",
+     "9.82697374",
+     "2.1368869",
+     "3.65091357",
+     "0.70654318"
+    ],
+    [
+     "5.698",
+     "0.458",
+     "0.3793333",
+     "-0.395",
+     "1.29",
+     "-0.824"
+    ]
+   ],
+   "types": [
+    "Longitude; AdministrativeRegion",
+    "Latitude; AdministrativeRegion",
+    "Ergosterol; ChemicalCompound; ChemicalSubstance",
+    "Cellulose; ChemicalCompound; ChemicalSubstance"
+   ],
+   "reasoning": "Reasoning: The first column contains values like \"48.4\" and \"48.38,\" which are numerical degrees typically associated with geographic coordinates, specifically longitude, as seen in the context of the second column's latitude values. The second column contains values like \"9.34\" and \"9.47,\" which are also numerical degrees, fitting the pattern of latitude coordinates. The third column contains values like \"2.77269794\" and \"9.82697374,\" which are abstract numerical values without clear units but are associated with chemical compounds, as indicated by the fourth column's related chemical names like \"Cellulose.\" The fourth column explicitly names chemical compounds like \"5.698\" (Cellulose), \"0.458\" (Ergosterol), etc., confirming the chemical context. Therefore, the column types are [\"Longitude; AdministrativeRegion\", \"Latitude; AdministrativeRegion\", \"Ergosterol; ChemicalCompound; ChemicalSubstance\", \"Cellulose; ChemicalCompound; ChemicalSubstance\"].",
+   "quoted_share": 0.89,
+   "n_quoted": 9,
+   "judge": {
+    "cites_cells": 4,
+    "uses_other_columns": 3,
+    "consistent": 5
+   },
+   "score": 12.88888888888889
+  }
+ ]
+}

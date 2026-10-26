@@ -1,0 +1,180 @@
+{
+ "status": "auto_selected",
+ "dataset": "db",
+ "setting": "single_label",
+ "seed": 0,
+ "examples": [
+  {
+   "table_id": "GitTables_110390",
+   "columns": [
+    [
+     "AK",
+     "AL",
+     "AR",
+     "AZ",
+     "CA",
+     "CO"
+    ],
+    [
+     "1983",
+     "1983",
+     "1983",
+     "1983",
+     "1983",
+     "1983"
+    ],
+    [
+     "North",
+     "South",
+     "East",
+     "West",
+     "Mid-West",
+     "North"
+    ]
+   ],
+   "types": [
+    "state",
+    "year",
+    "region"
+   ],
+   "reasoning": "Reasoning: Based on the values in the first column (e.g., \"AK\", \"AL\", \"AR\"), these appear to be postal codes or abbreviations for states, as seen in the context of the third column which contains region names associated with these states (e.g., \"North\", \"South\"). The second column consistently contains the same value \"1983\" for all rows, suggesting it represents a year or a specific time period relevant to the states listed. The third column provides region labels (e.g., \"East\", \"West\") that correspond to the states in the first column, further confirming the context of states and their associated regions. Therefore, the column types are [\"state\", \"year\", \"region\"].",
+   "quoted_share": 1.0,
+   "n_quoted": 8,
+   "judge": {
+    "cites_cells": 4,
+    "uses_other_columns": 3,
+    "consistent": 5
+   },
+   "score": 13.0
+  },
+  {
+   "table_id": "GitTables_37657",
+   "columns": [
+    [
+     "Springfield",
+     "Springfield",
+     "Springfield",
+     "Springfield",
+     "Springfield",
+     "Springfield"
+    ],
+    [
+     "MA",
+     "MA",
+     "MA",
+     "MA",
+     "MA",
+     "MA"
+    ],
+    [
+     "Hampden",
+     "Hampden",
+     "Hampden",
+     "Hampden",
+     "Hampden",
+     "Hampden"
+    ]
+   ],
+   "types": [
+    "city",
+    "state",
+    "county"
+   ],
+   "reasoning": "Reasoning: Based on the repeated values in the first column like \"Springfield\" which is a common city name, the second column listing state abbreviations such as \"MA\" (Massachusetts), and the third column naming counties like \"Hampden\" which is a county in Massachusetts, it is clear that the first column represents cities, the second column indicates the state where the cities are located, and the third column specifies the county within that state. The consistency across all rows confirms that these relationships hold true for all entries, with \"Springfield\" being the city name, \"MA\" the state abbreviation, and \"Hampden\" the county. Therefore, the column types are [\"city\", \"state\", \"county\"].",
+   "quoted_share": 1.0,
+   "n_quoted": 6,
+   "judge": {
+    "cites_cells": 4,
+    "uses_other_columns": 3,
+    "consistent": 5
+   },
+   "score": 13.0
+  },
+  {
+   "table_id": "GitTables_140703",
+   "columns": [
+    [
+     "Search for neutrinoless double-beta decay with the SuperNEMO demonstrator",
+     "$0\\nu\\beta\\beta$ sensitivity with the SuperNEMO demonstrator",
+     "Status of SuperNEMO Demonstrator ",
+     "Topological detection of $\\beta\\beta$-decay with NEMO-3 and SuperNEMO",
+     "Ultra-low Level Radon Assays in Gases",
+     "Search for Neutrinoless Double-$\\beta$ Decay of $^{100}$Mo in the final NEMO-3 dataset"
+    ],
+    [
+     "2017-07-07",
+     "2017-03-18",
+     "2016-08-05",
+     "2015-06-04",
+     "2015-03-18",
+     "2014-03-15"
+    ],
+    [
+     "Carla Macolino",
+     "Steven Calvez",
+     "Fr'ed'eric Perrot",
+     "Ruben Saakyan",
+     "Xin Ran Liu",
+     "Stefano Torre"
+    ]
+   ],
+   "types": [
+    "title",
+    "date",
+    "author"
+   ],
+   "reasoning": "Reasoning: The first column contains descriptive phrases like \"Search for neutrinoless double-beta decay with the SuperNEMO demonstrator\" and \"Ultra-low Level Radon Assays in Gases,\" which are clearly titles of research projects or experiments. The second column lists specific dates such as \"2017-07-07\" and \"2015-03-18,\" which correspond to the milestones or publication dates related to the projects mentioned in the first column. The third column includes names like \"Carla Macolino\" and \"Steven Calvez,\" which are associated with the projects as authors. Therefore, the column types are [\"title\", \"date\", \"author\"].",
+   "quoted_share": 1.0,
+   "n_quoted": 6,
+   "judge": {
+    "cites_cells": 4,
+    "uses_other_columns": 3,
+    "consistent": 5
+   },
+   "score": 13.0
+  },
+  {
+   "table_id": "GitTables_414",
+   "columns": [
+    [
+     "TaungthaWethet-T-1",
+     "ThaiphumRengkheng-T-7",
+     "AshoKokanTan-A-1",
+     "AshoLinde-A-11",
+     "UppuKyinDwe-U-5",
+     "LonpawKhoimalaung-U-9"
+    ],
+    [
+     "Taungtha (Wethet)",
+     "Thaiphum (Rengkheng)",
+     "Asho (Kokan Tan)",
+     "Asho (Linde)",
+     "Uppu (Kyin Dwe)",
+     "Lonpaw (Khoimalaung)"
+    ],
+    [
+     "Sino-Tibetan",
+     "Sino-Tibetan",
+     "Sino-Tibetan",
+     "Sino-Tibetan",
+     "Sino-Tibetan",
+     "Sino-Tibetan"
+    ]
+   ],
+   "types": [
+    "id",
+    "name",
+    "family"
+   ],
+   "reasoning": "Reasoning: The first column contains unique identifiers like \"TaungthaWethet-T-1,\" \"AshoKokanTan-A-1,\" etc., which appear to be specific codes or codes with extensions (e.g., \"-T-1,\" \"-A-1\"), suggesting these are IDs. The second column provides the full names corresponding to these IDs, such as \"Taungtha (Wethet)\" and \"Asho (Kokan Tan),\" indicating it represents the names associated with the IDs. The third column consistently shows the same value \"Sino-Tibetan\" across all rows, which is a category label, implying it describes the family or classification of the entries. Therefore, the column types are [\"id\", \"name\", \"family\"].",
+   "quoted_share": 1.0,
+   "n_quoted": 7,
+   "judge": {
+    "cites_cells": 4,
+    "uses_other_columns": 3,
+    "consistent": 5
+   },
+   "score": 13.0
+  }
+ ]
+}

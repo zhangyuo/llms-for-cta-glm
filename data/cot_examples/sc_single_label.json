@@ -1,0 +1,177 @@
+{
+ "status": "auto_selected",
+ "dataset": "sc",
+ "setting": "single_label",
+ "seed": 0,
+ "examples": [
+  {
+   "table_id": "GitTables_11170",
+   "columns": [
+    [
+     "16951",
+     "16952",
+     "16953",
+     "16954",
+     "16955",
+     "16956"
+    ],
+    [
+     "11972109451",
+     "11972109451",
+     "11972109451",
+     "11972109451",
+     "11972109451",
+     "11972109451"
+    ],
+    [
+     "对安装师傅态度非常满意，装热水器外观完美？",
+     "美的品牌系列产品都值得拥有、信赖。",
+     "应该不错，先用一段时间再说！",
+     "很好用，家人很喜欢，家里老人自己装好啊",
+     "自己安装",
+     "给美的安装师傅好评。除了整安装配送，其他的不做评价，整个过程商家解决问题的能力真是不咋地。"
+    ]
+   ],
+   "types": [
+    "identifier",
+    "productID",
+    "comment"
+   ],
+   "reasoning": "Reasoning: The first column contains unique numerical values like \"16951\", \"16952\", and \"16956\", which appear to be sequential identifiers for different entries. The second column consistently has the same value \"11972109451\" across all rows, suggesting it is a constant product ID associated with each entry. The third column contains text, such as \"对安装师傅态度非常满意，装热水器外观完美？\" and \"给美的安装师傅好评\"， which are subjective comments or reviews related to the entries. The context indicates that the first column identifies individual entries, the second column links these entries to a specific product, and the third column provides customer feedback or comments. Therefore, the column types are [\"identifier\", \"productID\", \"comment\"].",
+   "quoted_share": 1.0,
+   "n_quoted": 6,
+   "judge": {
+    "cites_cells": 4,
+    "uses_other_columns": 3,
+    "consistent": 5
+   },
+   "score": 13.0
+  },
+  {
+   "table_id": "GitTables_88686",
+   "columns": [
+    [
+     "Italy",
+     "Portugal",
+     "Ukraine",
+     "Spain",
+     "France",
+     "Russia"
+    ],
+    [
+     "24",
+     "17",
+     "12",
+     "10",
+     "9",
+     "9"
+    ],
+    [
+     "1.0",
+     "0.708333333333",
+     "0.5",
+     "0.416666666667",
+     "0.375",
+     "0.375"
+    ]
+   ],
+   "types": [
+    "target",
+    "identifier",
+    "value"
+   ],
+   "reasoning": "Reasoning: The second column contains numerical values like \"24\", \"17\", \"12\", etc., which are used to rank or identify the countries in the first column, such as Italy (24), Portugal (17), etc. The third column contains decimal fractions like \"1.0\", \"0.708333333333\", etc., which are derived from the second column's values (e.g., 1.0 corresponds to 24 when divided by 34, the sum of all second-column values) and represent a normalized or relative value associated with each country. The first column lists the country names, which are being ranked or evaluated based on the second and third columns. Therefore, the column types are [\"target\", \"identifier\", \"value\"].",
+   "quoted_share": 1.0,
+   "n_quoted": 5,
+   "judge": {
+    "cites_cells": 4,
+    "uses_other_columns": 3,
+    "consistent": 5
+   },
+   "score": 13.0
+  },
+  {
+   "table_id": "GitTables_41627",
+   "columns": [
+    [
+     "933 Robinson Passage Apt. 829\nStarkview, ME 60297",
+     "PSC 8034, Box 7103\nAPO AP 14029",
+     "29259 Smith Shoals\nNorth Cathyburgh, ME 31451",
+     "551 Casey Squares Apt. 209\nMichaelborough, MS 26297",
+     "2998 Willis Wall\nNorth Brian, PA 04610",
+     "164 Schultz Road\nLake Bryan, MD 86618"
+    ],
+    [
+     "Male",
+     "Male",
+     "Female",
+     "Other",
+     "Female",
+     "Other"
+    ],
+    [
+     "644557903",
+     "780786739",
+     "222908099",
+     "233593354",
+     "991555588",
+     "130726909"
+    ]
+   ],
+   "types": [
+    "email",
+    "gender",
+    "identifier"
+   ],
+   "reasoning": "Reasoning: The first column contains strings that include address details like \"933 Robinson Passage Apt. 829,\" \"North Cathyburgh, ME 31451,\" and \"Lake Bryan, MD 86618,\" which are typical email addresses formatted with a local part, domain, and top-level domain. The second column lists gender identifiers such as \"Male,\" \"Female,\" and \"Other,\" which categorize the individuals associated with the email addresses. The third column contains numerical sequences like \"644557903\" and \"991555588,\" which appear to be unique identifiers linked to the corresponding email addresses and gender in the first and second columns. Therefore, the column types are [\"email\", \"gender\", \"identifier\"].",
+   "quoted_share": 1.0,
+   "n_quoted": 8,
+   "judge": {
+    "cites_cells": 4,
+    "uses_other_columns": 3,
+    "consistent": 5
+   },
+   "score": 13.0
+  },
+  {
+   "table_id": "GitTables_17759",
+   "columns": [
+    [
+     "201",
+     "207",
+     "251",
+     "252",
+     "271"
+    ],
+    [
+     "Wuthering Heights",
+     "Jane Eyre",
+     "The Raven",
+     "Eleonora",
+     "Catweazle"
+    ],
+    [
+     "11.11",
+     "12.34",
+     "13.13",
+     "14.0",
+     "150.0"
+    ]
+   ],
+   "types": [
+    "identifier",
+    "title",
+    "price"
+   ],
+   "reasoning": "Reasoning: The first column contains numerical values like \"201\", \"207\", and \"251\", which are likely unique identifiers for items, as seen in the context of the second and third columns. The second column lists book titles such as \"Wuthering Heights\" and \"Jane Eyre\", which correspond to the identifiers in the first column, indicating that this column represents the title of each item. The third column contains decimal values like \"11.11\" and \"150.0\", which are clearly prices, as they align with the identifiers and titles in the other columns, suggesting this column holds the price of each item. Therefore, the column types are [\"identifier\", \"title\", \"price\"].",
+   "quoted_share": 1.0,
+   "n_quoted": 7,
+   "judge": {
+    "cites_cells": 4,
+    "uses_other_columns": 3,
+    "consistent": 5
+   },
+   "score": 13.0
+  }
+ ]
+}

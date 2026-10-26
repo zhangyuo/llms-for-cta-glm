@@ -1,0 +1,396 @@
+[
+ {
+  "table_id": "b9b284ef0bd745749d71bb983ba9ace9",
+  "columns": [
+   [
+    "LAGUARDIA NY",
+    "DALLAS/FORT WORTH INTL ARPT",
+    "LAKEFRONT AIRPORT",
+    "SEATTLE-TACOMA INTL",
+    "NORFOLK INTL",
+    "GUAYAQUIL/S BOLIVAR"
+   ],
+   [
+    "> 1000 ft",
+    "< 1000 ft",
+    "< 1000 ft",
+    "< 1000 ft",
+    "< 1000 ft",
+    "< 1000 ft"
+   ],
+   [
+    "30736",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ]
+  ],
+  "types": [
+   "Airport",
+   "Altitude",
+   "Cost"
+  ],
+  "reasoning": "Reasoning: The first column contains names like \"LAGUARDIA\", \"NY\", \"DALLAS/FORT WORTH\", and \"SEATTLE-TACOMA INTL\", which are all identifiers for airports, indicating that the first column represents \"Airport\". The second column lists values such as \"> 1000 ft\" and \"< 1000 ft\", which describe the altitude of the airports, suggesting that the second column is \"Altitude\". The third column contains numerical values like \"30736\" and \"0\", which likely correspond to the cost associated with each airport, as seen from the context of the first two columns, meaning the third column is \"Cost\". Therefore, the column types are [\"Airport\", \"Altitude\", \"Cost\"].",
+  "quoted_share": 0.8,
+  "n_quoted": 10,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 12.8
+ },
+ {
+  "table_id": "dffeec8c3593402bafa69b50f5920fa5",
+  "columns": [
+   [
+    "LAGUARDIA NY,US AIRWAYS*",
+    "DALLAS/FORT WORTH INTL ARPT,AMERICAN AIRLINES",
+    "LAKEFRONT AIRPORT,BUSINESS",
+    "SEATTLE-TACOMA INTL,ALASKA AIRLINES",
+    "NORFOLK INTL,COMAIR AIRLINES",
+    "GUAYAQUIL/S BOLIVAR,AMERICAN AIRLINES"
+   ],
+   [
+    "> 1000 ft",
+    "< 1000 ft",
+    "< 1000 ft",
+    "< 1000 ft",
+    "< 1000 ft",
+    "< 1000 ft"
+   ],
+   [
+    "30736",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ]
+  ],
+  "types": [
+   "Airport",
+   "Altitude",
+   "Cost"
+  ],
+  "reasoning": "Reasoning: Based on the names in the first column like \"LAGUARDIA NY,US\" and \"DALLAS/FORT WORTH INTL,\" which are airport names and locations, the first column represents airports. The second column contains numerical values like \"> 1000 ft\" and \"< 1000 ft,\" which describe the altitude of the airports, and these values are compared to each other, indicating it measures altitude. The third column contains numerical values like \"30736\" and \"0,\" which are costs associated with each airport as seen in the context of the first two columns, suggesting it represents costs. Therefore, the column types are [\"Airport\", \"Altitude\", \"Cost\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 6,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ },
+ {
+  "table_id": "f99ab21885664e20bd25d1cf848f4c5e",
+  "columns": [
+   [
+    "Unknown Class",
+    "Mammalia",
+    "Unknown Class",
+    "Mammalia",
+    "Unknown Class",
+    "Unknown Class"
+   ],
+   [
+    "12.4",
+    "7.2",
+    "25.9",
+    "15.3",
+    "17.1",
+    "11.5"
+   ]
+  ],
+  "types": [
+   "Class_(biology)",
+   "Confidence_interval"
+  ],
+  "reasoning": "Reasoning: The first column contains biological class names such as \"Unknown Class,\" \"Mammalia,\" and \"Unknown Class,\" which indicate the biological classification of the organisms. The second column contains numerical values like \"12.4,\" \"7.2,\" and \"25.9,\" which represent confidence intervals associated with the data, as seen from the context of the first column (e.g., \"12.4\" corresponds to the class \"Unknown Class\" in the same row). The values in the second column are also consistent with the meaning of confidence intervals, which are typically numerical ranges used to estimate uncertainty in measurements or statistical analyses. Therefore, the column types are [\"Class_(biology)\", \"Confidence_interval\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 8,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ },
+ {
+  "table_id": "34169c088ee848e4866f42e87b4ccbc2",
+  "columns": [
+   [
+    "September_2015",
+    "July_2015",
+    "August_2015",
+    "September_2016",
+    "July_2015",
+    "September_2015"
+   ],
+   [
+    "1",
+    "1",
+    "1",
+    "1",
+    "4",
+    "4"
+   ]
+  ],
+  "types": [
+   "Month",
+   "Density"
+  ],
+  "reasoning": "Reasoning: Based on the values in the first column, such as \"September_2015,\" \"July_2015,\" and \"August_2015,\" it is clear that this column represents months, as all entries are month names. The second column contains numerical values like \"1\" and \"4,\" which are used to quantify something related to the month in the first column. For example, the pair \"July_2015\" and \"1\" suggests that the second column indicates a density or count associated with the month mentioned in the first column. The consistency of the format and the context imply that the first column is for months and the second is for density. Therefore, the column types are [\"Month\", \"Density\"].",
+  "quoted_share": 0.8,
+  "n_quoted": 5,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 12.8
+ },
+ {
+  "table_id": "39a2d36769294a0a846cc209c45234e4",
+  "columns": [
+   [
+    "2015 (September)",
+    "2015 (July)",
+    "2015 (August)",
+    "2016 (September)",
+    "2015 (July)",
+    "2015 (September)"
+   ],
+   [
+    "1",
+    "1",
+    "1",
+    "1",
+    "4",
+    "4"
+   ]
+  ],
+  "types": [
+   "Month",
+   "Density"
+  ],
+  "reasoning": "Reasoning: The first column contains values like \"2015 (September)\", \"2015 (July)\", and \"2016 (September)\", which are all dates or time periods, specifically focusing on months. For example, \"September\" is explicitly mentioned in multiple cells, and the year \"2015\" or \"2016\" appears consistently alongside these month names, indicating that the column represents months. The second column contains numerical values like \"1\", \"4\", and \"1\", which seem to correspond to some quantitative measure related to the months listed in the first column. For instance, when the first column has \"2015 (September)\", the second column shows \"1\", and when it has \"2015 (July)\", it also shows \"1\", suggesting that the numbers are a type of density or count associated with each month. Therefore, the column types are [\"Month\", \"Density\"].",
+  "quoted_share": 0.73,
+  "n_quoted": 11,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 12.727272727272727
+ },
+ {
+  "table_id": "b785d9ed72b347ae9cb0997df17258d8",
+  "columns": [
+   [
+    "Mammalia",
+    "Mammalia",
+    "Reptilia",
+    "Mammalia",
+    "Mammalia",
+    "Mammalia"
+   ],
+   [
+    "12.4",
+    "7.2",
+    "25.9",
+    "15.3",
+    "17.1",
+    "11.5"
+   ]
+  ],
+  "types": [
+   "Class_(biology)",
+   "Confidence_interval"
+  ],
+  "reasoning": "Reasoning: The first column contains biological class names like \"Mammalia\" and \"Reptilia,\" which are taxonomic classifications, indicating that this column represents the biological class of organisms. The second column contains numerical values such as \"12.4\" and \"25.9,\" which are ranges or estimates often associated with confidence intervals in scientific data, and these values correspond to the entries in the first column, suggesting that this column provides confidence intervals for the classes listed. Therefore, the column types are [\"Class_(biology)\", \"Confidence_interval\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 4,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ },
+ {
+  "table_id": "9136f9e37ec94669a82e28df799553bf",
+  "columns": [
+   [
+    "Leptpso",
+    "Leptosol",
+    "Leztool",
+    "Leptosol",
+    "Lnposol",
+    "Leptosol"
+   ],
+   [
+    "6.525",
+    "6.745",
+    "6.22",
+    "5.075",
+    "6.14",
+    "5.865"
+   ],
+   [
+    "287.3",
+    "85.3",
+    "105.05",
+    "131.05",
+    "-32.25",
+    "73.2"
+   ]
+  ],
+  "types": [
+   "Soil_type",
+   "PH",
+   "Biomass_(ecology)"
+  ],
+  "reasoning": "Reasoning: The first column contains soil-related terms like \"Leptpso,\" \"Leptosol,\" and \"Lnposol,\" which are types of soil, so it is a \"Soil_type.\" The second column contains numerical values associated with each soil type, such as \"6.525,\" \"6.745,\" and \"5.075,\" which are typical pH levels, indicating that it is a \"PH\" column. The third column lists values like \"287.3,\" \"85.3,\" and \"73.2,\" which are ecological measurements related to soil, such as biomass, suggesting it is a \"Biomass_(ecology)\" column. Therefore, the column types are [\"Soil_type\", \"PH\", \"Biomass_(ecology)\"].",
+  "quoted_share": 0.75,
+  "n_quoted": 12,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 12.75
+ },
+ {
+  "table_id": "b02af14b8cf34c43bac84325d6f1e912",
+  "columns": [
+   [
+    "Aqua regia for Agricultural Land_Ap Samples",
+    "Ag_Silver_Ap_AquaRegia",
+    "Al_Alluminium_Ap_AquaRegia",
+    "As_Arsenic_Ap_AquaRegia",
+    "Au_Gold_Ap_AquaRegia",
+    "B_Boron_Ap_AquaRegia"
+   ],
+   [
+    "False",
+    "False",
+    "False",
+    "False",
+    "False",
+    "False"
+   ],
+   [
+    "False",
+    "False",
+    "False",
+    "False",
+    "False",
+    "False"
+   ]
+  ],
+  "types": [
+   "Chemical_element",
+   "Scale_(ratio)",
+   "Scale_(ratio)"
+  ],
+  "reasoning": "Reasoning: The first column contains chemical element names like \"Aqua regia,\" \"Silver,\" \"Aluminum,\" \"Arsenic,\" \"Gold,\" and \"Boron,\" indicating that it represents chemical elements. The second and third columns are filled entirely with \"False,\" which suggests they are binary scale values (ratio) used to measure or categorize the elements in the first column. The consistency across all rows supports the idea that these columns provide additional scale-based data related to the chemical elements listed, such as measurement or classification metrics. Therefore, the column types are [\"Chemical_element\", \"Scale_(ratio)\", \"Scale_(ratio)\"].",
+  "quoted_share": 0.86,
+  "n_quoted": 7,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 12.857142857142858
+ },
+ {
+  "table_id": "d4c54ecd718449e19a14216c55803455",
+  "columns": [
+   [
+    "biomass",
+    "16939.5207628439",
+    "9684.50502913711",
+    "4342.72084002645",
+    "4159.45012351404",
+    "3964.87367224072"
+   ],
+   [
+    "species",
+    "47",
+    "30",
+    "27",
+    "29",
+    "23"
+   ],
+   [
+    "temprature",
+    "1.23441157024793",
+    "-0.85554841666667",
+    "-0.88724",
+    "-0.87160108333333",
+    "-0.336074049586777"
+   ]
+  ],
+  "types": [
+   "Biomass_(ecology)",
+   "Species",
+   "Intensity_(physics)"
+  ],
+  "reasoning": "Reasoning: The first column contains numerical values like \"16939.5207628439\" and \"9684.50502913711,\" which represent quantitative measurements typically associated with ecological metrics, as indicated by the header \"biomass.\" The second column lists discrete integers such as \"47,\" \"30,\" and \"23,\" which correspond to species identifiers, as seen in the header \"species.\" The third column includes decimal values like \"1.23441157024793\" and \"-0.85554841666667,\" which suggest a measurement of intensity or temperature, as evidenced by the header \"temprature.\" The context across all columns supports these interpretations, with the first column's values likely reflecting ecosystem biomass, the second column indicating species counts, and the third column measuring environmental intensity. Therefore, the column types are [\"Biomass_(ecology)\", \"Species\", \"Intensity_(physics)\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 10,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ },
+ {
+  "table_id": "9b73e5e8f3894884bddaf5ca6997d99c",
+  "columns": [
+   [
+    "Leptosol",
+    "Leptosol",
+    "Leptosol",
+    "Leptosol",
+    "Leptosol",
+    "Leptosol"
+   ],
+   [
+    "6.525",
+    "6.745",
+    "6.22",
+    "5.075",
+    "6.14",
+    "5.865"
+   ],
+   [
+    "287.3",
+    "85.3",
+    "105.05",
+    "131.05",
+    "-32.25",
+    "73.2"
+   ]
+  ],
+  "types": [
+   "Soil_type",
+   "PH",
+   "Biomass_(ecology)"
+  ],
+  "reasoning": "Reasoning: Based on the values in the first column, all entries are names of soil types (e.g., \"Leptosol\"), indicating that the first column represents \"Soil_type\". The second column contains numerical values that correspond to pH levels (e.g., \"6.525\", \"6.745\"), which is a common property used to classify soil types, suggesting this column is \"PH\". The third column contains numerical values that represent biomass measurements (e.g., \"287.3\", \"85.3\"), and these values are logically associated with the soil types and pH levels in the first and second columns, respectively, as biomass in an ecosystem is influenced by soil type and pH. Therefore, the column types are [\"Soil_type\", \"PH\", \"Biomass_(ecology)\"].",
+  "quoted_share": 0.71,
+  "n_quoted": 7,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 12.714285714285714
+ }
+]

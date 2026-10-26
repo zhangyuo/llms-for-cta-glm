@@ -1,0 +1,362 @@
+[
+ {
+  "table_id": "6371751-5",
+  "columns": [
+   [
+    "2010 2011 2012"
+   ],
+   [
+    "Marco Holzer Timo Scheider Oliver Gavin Jan Magnussen Oliver Gavin Tommy Milner"
+   ],
+   [
+    "Porsche 997 GT3 -RSR Chevrolet Corvette C6.R Chevrolet Corvette C6.R"
+   ]
+  ],
+  "types": [
+   "time.event",
+   "people.person",
+   "automotive.model"
+  ],
+  "reasoning": "Reasoning: The first column contains years like \"2010\", \"2011\", and \"2012\", which are chronological events, so it represents \"time.event\". The second column lists names such as \"Marco Holzer\" and \"Timo Scheider\", which are human names, indicating that it represents \"people.person\". The third column contains car models like \"Porsche 997 GT3 -RSR\" and \"Chevrolet Corvette C6.R\", which are automotive models, so it represents \"automotive.model\". The context across the columns confirms these types, as the years correspond to racing seasons, the drivers' names compete in those seasons, and their vehicles are the models they race. Therefore, the column types are [\"time.event\", \"people.person\", \"automotive.model\"].",
+  "quoted_share": 0.7,
+  "n_quoted": 10,
+  "judge": {
+   "cites_cells": 5,
+   "uses_other_columns": 4,
+   "consistent": 5
+  },
+  "score": 14.7
+ },
+ {
+  "table_id": "11978067-4",
+  "columns": [
+   [
+    "2009 2010 2011 AET 2012"
+   ],
+   [
+    "Kildare Wicklow TCD Fingal"
+   ],
+   [
+    "Louth Armagh Louth Armagh"
+   ]
+  ],
+  "types": [
+   "time.event",
+   "organization.organization",
+   "organization.organization"
+  ],
+  "reasoning": "Reasoning: The values in Column 1, such as \"2009\", \"2010\", and \"2011\", are numerical and represent years, while the value \"AET\" stands for \"After Extra Time,\" indicating a timing or event status. This suggests Column 1 is about time or events. Column 2 contains names like \"Kildare\" and \"Wicklow,\" which are known Irish organizations (hurling teams), and this aligns with Column 3, which repeats these names (e.g., \"Louth\" appears with \"Kildare\" in the same row, showing they correspond to each other as teams). Thus, Columns 2 and 3 represent organizations. Therefore, the column types are [\"time.event\", \"organization.organization\", \"organization.organization\"].",
+  "quoted_share": 0.89,
+  "n_quoted": 9,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 12.88888888888889
+ },
+ {
+  "table_id": "29560012-3",
+  "columns": [
+   [
+    "2011 2012 2013"
+   ],
+   [
+    "Northern Territory Brisbane Lions Brisbane Lions"
+   ],
+   [
+    "Ainslie Queanbeyan Sydney Swans"
+   ]
+  ],
+  "types": [
+   "time.event",
+   "sports.sports_team",
+   "sports.sports_team"
+  ],
+  "reasoning": "Reasoning: The first column contains numerical values like \"2011\", \"2012\", and \"2013\", which represent years, indicating that it describes a time event. The second and third columns contain names of sports teams such as \"Northern Territory\", \"Brisbane Lions\", \"Ainslie\", and \"Queanbeyan\", which are specific to a sport, confirming they represent sports teams. The context shows that the teams mentioned in the second and third columns are associated with events in the first column, further supporting that the first column is a time event and the others are sports teams. Therefore, the column types are [\"time.event\", \"sports.sports_team\", \"sports.sports_team\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 7,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ },
+ {
+  "table_id": "7015936-1",
+  "columns": [
+   [
+    "2009 Details 2011 Details 2013 Details"
+   ],
+   [
+    "South Korea South Korea Soviet Union China Italy China"
+   ],
+   [
+    "China South Korea Italy South Korea China Serbia and Montenegro China"
+   ],
+   [
+    "China China South Korea China South Korea China China China"
+   ],
+   [
+    "China China Italy Italy United States United States Italy"
+   ]
+  ],
+  "types": [
+   "time.event",
+   "sports.sports_team",
+   "sports.sports_team",
+   "sports.sports_team",
+   "sports.sports_team"
+  ],
+  "reasoning": "Reasoning: The first column contains values like \"2009 Details\" and \"2011 Details,\" which represent specific years or time periods followed by additional information, indicating that it corresponds to a time-based event. The second column lists names such as \"South Korea\" and \"China,\" which are countries or teams often associated with sports events, and it is repeated across multiple rows with the third column, suggesting it represents a sports team. The third column also contains sports teams like \"Soviet Union\" and \"Serbia and Montenegro,\" reinforcing the idea that these columns together describe teams involved in sports events. The fourth and fifth columns consistently list \"China,\" \"South Korea,\" and other countries, aligning with the sports team theme and providing context for the relationships between the teams across different events. Therefore, the column types are [\"time.event\", \"sports.sports_team\", \"sports.sports_team\", \"sports.sports_team\", \"sports.sports_team\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 8,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ },
+ {
+  "table_id": "6170183-1",
+  "columns": [
+   [
+    "Keimola Motor Stadium Mantorp Park Scandinavian Raceway"
+   ],
+   [
+    "Jochen Rindt Leo Kinnunen Leo Kinnunen"
+   ],
+   [
+    "Porsche 908 Porsche 908 Porsche 908"
+   ]
+  ],
+  "types": [
+   "location.location",
+   "people.person",
+   "automotive.model"
+  ],
+  "reasoning": "Reasoning: The first column contains place names like \"Keimola,\" \"Motor,\" and \"Scandinavian Raceway,\" which are all locations related to racing or motor sports, and the context of the second and third columns (people and cars) further confirms these are race tracks. The second column lists names such as \"Jochen Rindt\" and \"Leo Kinnunen,\" which are individuals, likely racers or drivers, and these names are associated with the cars listed in the third column. The third column consistently shows \"Porsche 908,\" which is a specific model of a racing car, linking it to the drivers in the second column and the locations in the first column where these races would have taken place. Therefore, the column types are [\"location.location\", \"people.person\", \"automotive.model\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 6,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ },
+ {
+  "table_id": "5479338-7",
+  "columns": [
+   [
+    "North Melbourne Essendon Hawthorn Melbourne St Kilda Footscray Sydney"
+   ],
+   [
+    "Fitzroy Carlton West Coast Brisbane Bears Adelaide Richmond Geelong"
+   ],
+   [
+    "MCG Waverley Park Princes Park MCG Moorabbin Whitten Oval SCG"
+   ]
+  ],
+  "types": [
+   "sports.sports_team",
+   "sports.sports_team",
+   "location.location"
+  ],
+  "reasoning": "Reasoning: The first column lists team names such as \"North Melbourne\" and \"Melbourne,\" which are sports teams in the Australian rules football league, while the second column contains other team names like \"Fitzroy Carlton\" and \"West Coast,\" also identified as sports teams. The third column provides locations associated with these teams, such as \"MCG\" (Melbourne Cricket Ground), \"Waverley Park,\" and \"Princes Park,\" which are venues where matches are played and are categorized as locations. The relationship between the columns shows that the first column represents teams, the second column represents opposing or associated teams, and the third column represents the locations where matches occur. Therefore, the column types are [\"sports.sports_team\", \"sports.sports_team\", \"location.location\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 7,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ },
+ {
+  "table_id": "14534570-1",
+  "columns": [
+   [
+    "1993 Details 2007 Details 2009 Details 2011 Details 2013 Details"
+   ],
+   [
+    "Soviet Union West Germany Sweden Sweden Sweden Serbia and Montenegro"
+   ],
+   [
+    "Sweden Czechoslovakia Soviet Union Soviet Union Sweden"
+   ],
+   [
+    "Sweden Sweden West Germany Sweden West Germany"
+   ]
+  ],
+  "types": [
+   "time.event",
+   "sports.sports_team",
+   "sports.sports_team",
+   "sports.sports_team"
+  ],
+  "reasoning": "Reasoning: The first column contains years like \"1993\" and \"2007,\" which are sequential time markers often associated with events, and the phrase \"Details\" in each cell further confirms this is a record of events over time. The second column lists names of national teams such as \"Soviet Union\" and \"Sweden,\" which are clearly sports teams, and these teams are mentioned again in the third and fourth columns, indicating they are related entities. The third and fourth columns consistently refer to different teams like \"Czechoslovakia\" or \"West Germany,\" which align with the second column's teams and suggest these are also sports teams being mentioned in different contexts. Therefore, the column types are [\"time.event\", \"sports.sports_team\", \"sports.sports_team\", \"sports.sports_team\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 7,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ },
+ {
+  "table_id": "21164944-9",
+  "columns": [
+   [
+    "Alexander Volkov Andrey Koreshkov Dave Jansen Shahbulat Shamhalaev"
+   ],
+   [
+    "Richard Hale Lyman Good Marcin Held Rad Martinez"
+   ],
+   [
+    "Bellator 84 Bellator 82 Bellator 93 Bellator 90"
+   ]
+  ],
+  "types": [
+   "people.person",
+   "people.person",
+   "tv.tv_series_season"
+  ],
+  "reasoning": "Reasoning: The first column contains names like \"Alexander Volkov\" and \"Andrey Koreshkov,\" which are full names of individuals, indicating it represents people. The second column contains names like \"Richard Hale\" and \"Lyman Good,\" which are also full names of individuals and correspond to the opponents of the fighters in the first column, suggesting it represents people as well. The third column contains numerical codes like \"Bellator 84\" and \"Bellator 82,\" which are associated with the events where the matches took place (as seen in the context of the first and second columns) and follow a consistent format, indicating it represents TV series seasons. Therefore, the column types are [\"people.person\", \"people.person\", \"tv.tv_series_season\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 6,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ },
+ {
+  "table_id": "35946490-6",
+  "columns": [
+   [
+    "CBC Citytv Citytv CTV CTV Two Global"
+   ],
+   [
+    "Marketplace Last Man Standing CSI: NY Shark Tank Touch"
+   ],
+   [
+    "Community Community CSI: NY Shark Tank Touch"
+   ],
+   [
+    "The Fifth Estate Fringe Fringe Grimm Nikita Made in Jersey"
+   ],
+   [
+    "The National Blue Bloods Dateline NBC 16:9"
+   ]
+  ],
+  "types": [
+   "tv.tv_network",
+   "tv.tv_program",
+   "tv.tv_program",
+   "tv.tv_program",
+   "tv.tv_program"
+  ],
+  "reasoning": "Reasoning: Based on the names in the first column like \"CBC\", \"Citytv\", and \"CTV\", which are well-known television networks, and the context of the table where the second column lists show titles such as \"Marketplace\" and \"Shark Tank\", it is clear that the first column represents TV networks. The second column further confirms this by listing TV programs associated with these networks, as seen in rows like \"CBC\" paired with \"Marketplace\" or \"Citytv\" paired with \"Last Man Standing\". The third column repeats TV programs like \"CSI: NY\" and \"Shark Tank\", reinforcing the idea that these columns are all related to TV shows. The fourth and fifth columns list additional TV programs like \"Fringe\", \"The National\", and \"Dateline NBC\", which are distinct shows but consistent with the TV program theme. Therefore, the column types are [\"tv.tv_network\", \"tv.tv_program\", \"tv.tv_program\", \"tv.tv_program\", \"tv.tv_program\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 14,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ },
+ {
+  "table_id": "348263-1",
+  "columns": [
+   [
+    "French Grand Prix Monaco Grand Prix Belgian Grand Prix †"
+   ],
+   [
+    "Saint-Gaudens Monte Carlo Le Mans Spa-Francorchamps La Baule"
+   ],
+   [
+    "Bugatti Type 35 Bugatti Type 51 Bugatti Type 54"
+   ],
+   [
+    "Report Report Report Report"
+   ]
+  ],
+  "types": [
+   "time.recurring_event",
+   "location.location",
+   "automotive.model",
+   "time.event"
+  ],
+  "reasoning": "Reasoning: The first column contains names of car races like \"French Grand Prix\" and \"Monaco Grand Prix,\" which are recurring events, indicated by the format and context. The second column lists specific places like \"Saint-Gaudens\" and \"Monte Carlo,\" which are locations associated with these races. The third column contains car models such as \"Bugatti Type 35\" and \"Bugatti Type 54,\" which are automotive models used in the races, as seen by the consistent \"Bugatti\" prefix and the context of racing. The fourth column includes \"Report,\" \"Report,\" etc., which are time-based events related to the races, contextualized by the other columns. Therefore, the column types are [\"time.recurring_event\", \"location.location\", \"automotive.model\", \"time.event\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 9,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ },
+ {
+  "table_id": "27369078-18",
+  "columns": [
+   [
+    "Daniel Straus Maiquel Falcão Rick Hawn Karl Amoussou Marcos Galvao"
+   ],
+   [
+    "Marlon Sandro Andreas Spang Brent Weedman Bryan Baker Luis Nogueira"
+   ],
+   [
+    "Bellator 68 Bellator 69 Bellator 70 Bellator 72 Bellator 73"
+   ]
+  ],
+  "types": [
+   "people.person",
+   "people.person",
+   "tv.tv_series_season"
+  ],
+  "reasoning": "Reasoning: The first column contains names like \"Daniel Straus\" and \"Maiquel Falcão,\" which are human names, and the second column contains names like \"Marlon Sandro\" and \"Bryan Baker,\" which are also human names, suggesting that both columns represent people. The third column lists events like \"Bellator 68\" and \"Bellator 73,\" which are clearly identifiers for fight event seasons in a TV show (Bellator), indicating this column represents TV series seasons. The context of the table, where the first two columns likely match opponents in a fight event (as seen in the given names), confirms that the third column specifies the season of the TV show where these events took place. Therefore, the column types are [\"people.person\", \"people.person\", \"tv.tv_series_season\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 6,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ },
+ {
+  "table_id": "31766751-6",
+  "columns": [
+   [
+    "Noor Jehan A.S.M. Qamarul Hasan Zubaida Agha Ferdausi Begum Imtiaz Ali Taj"
+   ],
+   [
+    "Singer Painting Painting Singer Music Drama Nursing"
+   ],
+   [
+    "Punjab East Pakistan Punjab East Pakistan Punjab Punjab Punjab"
+   ]
+  ],
+  "types": [
+   "people.person",
+   "education.field_of_study",
+   "location.location"
+  ],
+  "reasoning": "Reasoning: The first column contains names like \"Noor Jehan\" and \"Imtiaz Ali Taj,\" which are clearly personal names. The second column lists professions or activities such as \"Singer\" and \"Painting,\" which are related to fields of study or careers. The third column provides geographical locations like \"Punjab\" and \"East Pakistan,\" which correspond to the places associated with the individuals in the first column. For example, \"Noor Jehan\" is identified as a \"Singer\" from Punjab, and \"Imtiaz Ali Taj\" is linked to \"Painting\" from the same location, confirming that the first column represents people, the second their fields of study or profession, and the third their associated locations. Therefore, the column types are [\"people.person\", \"education.field_of_study\", \"location.location\"].",
+  "quoted_share": 1.0,
+  "n_quoted": 10,
+  "judge": {
+   "cites_cells": 4,
+   "uses_other_columns": 3,
+   "consistent": 5
+  },
+  "score": 13.0
+ }
+]
